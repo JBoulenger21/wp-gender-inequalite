@@ -6,9 +6,12 @@ Description: Projet de site présentant les écarts de rémunérations entre hom
 Tags: HTML CSS JS
 Version: 1.0
 */
+body {
+  font-family: "Poppins";
+}
+
 h1 {
-  color: white;
-  background-color: purple;
+  font-family: "Sora";
 }
 
 @font-face {
@@ -27,6 +30,20 @@ h1 {
   src: url("../fonts/Sora-Regular.ttf");
   src: url("../fonts/Sora-SemiBold.ttf");
 }
+.header {
+  background-image: url("assets/images/illustration-egalite-salariale-banniere.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+}
+.header h1 {
+  color: white;
+  width: 50%;
+  position: absolute;
+  top: 50%;
+}
+
 p {
   color: black;
 }
