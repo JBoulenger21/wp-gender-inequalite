@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html lang="fr" dir="ltr">
+<html <?php language_attributes(); ?>>
   <head>
-    <meta charset="utf-8">
+    <meta charset="<?php bloginfo( 'charset' ); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
     <title><?php wp_title(); ?></title>
     <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css">
@@ -9,10 +9,32 @@
   </head>
   <body>
 
-    <div class="header">
+    <header class="header">
       <div class="container">
+        <nav class="navigation">
+          <div class="logo">
+            <a href="<?php echo home_url( '/' ); ?>">
+              <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.white.png" alt="icone logo">
+            </a>
+          </div>
+          <div class="item-navigation">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a>
+                  <?php wp_nav_menu( array (
+                  'theme_location' => 'navigation-hf',
+                  'menu_class' => 'menu_navigation',
+                ) ); ?>
+                </a>
+              </li>
+            </ul>
+
+          </div>
+
+
+        </nav>
         <h1>Les écarts de rémunération</h1>
 
       </div>
 
-    </div>
+    </header>
