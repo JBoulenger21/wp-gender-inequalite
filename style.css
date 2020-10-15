@@ -5,3 +5,22 @@ Author: Julie Boulenger, Laurine Herard, Mathieu Radjouki
 Template: hestia
 Version: 0.1.0
 */
+
+
+/* fonts */
+@font-face{
+  font-family:'Poppins';
+  src: url('fonts/Poppins-Italic.ttf');
+  src: url('fonts/Poppins-Light.ttf');
+  src: url('fonts/Poppins-Medium.ttf');
+  src: url('fonts/Poppins-Regular.ttf');
+  src: url('fonts/Poppins-Thin.ttf');
+}
+@font-face{
+  font-family:'Sora';
+  src: url('fonts/Sora-Bold.ttf');
+  src: url('fonts/Sora-ExtraBold.ttf');
+  src: url('fonts/Sora-Medium.ttf');
+  src: url('fonts/Sora-Regular.ttf');
+  src: url('fonts/Sora-SemiBold.ttf');
+}
