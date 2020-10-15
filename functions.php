@@ -15,4 +15,6 @@ function montheme_register_assets()
   wp_enqueue_style('style',get_stylesheet_uri());
 }
 
+
+add_action('after_setup_theme','montheme_supports');
 add_action('wp_enqueue_scripts', 'montheme_register_assets');
