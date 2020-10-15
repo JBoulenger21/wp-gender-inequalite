@@ -8,6 +8,11 @@
     <?php wp_head(); ?>
   </head>
   <body>
-    <div class="container">
-      <h1>test du header pour voir si ça marche, si ça marche pas c'est la merde</h1>
+
+    <div class="header">
+      <div class="container">
+        <h1>Les écarts de rémunération</h1>
+
+      </div>
+
     </div>
