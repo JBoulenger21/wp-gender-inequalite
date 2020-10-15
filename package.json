@@ -1,0 +1,19 @@
+{
+  "name": "laumaju",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./assets/sass/main.scss:./assets/css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/laurinehrd/wp-gender-inequalite.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/laurinehrd/wp-gender-inequalite/issues"
+  },
+  "homepage": "https://github.com/laurinehrd/wp-gender-inequalite#readme"
+}
