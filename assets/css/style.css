@@ -7,7 +7,7 @@ Tags: HTML CSS JS
 Version: 1.0
 */
 h1 {
-  color: white;
+  color: red;
   background-color: purple;
 }
 
@@ -26,9 +26,6 @@ h1 {
   src: url("../fonts/Sora-Medium.ttf");
   src: url("../fonts/Sora-Regular.ttf");
   src: url("../fonts/Sora-SemiBold.ttf");
-}
-p {
-  color: black;
 }
 
 /*# sourceMappingURL=style.css.map */
