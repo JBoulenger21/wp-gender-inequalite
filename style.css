@@ -27,5 +27,8 @@ h1 {
   src: url("../fonts/Sora-Regular.ttf");
   src: url("../fonts/Sora-SemiBold.ttf");
 }
+p {
+  color: black;
+}
 
 /*# sourceMappingURL=style.css.map */
