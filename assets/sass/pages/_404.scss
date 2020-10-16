@@ -1,21 +1,58 @@
 @import "../utils/variables";
 
 .contain-404{
-  height: 20rem;
-  width: 100%;
-  border: solid 5px $purpleDark;
+  display: flex;
+  justify-content: flex-start;
+  height: 55vh;
+  width: 40%;
+  border: solid 5px $greenLight;
   border:{
     top:none;
-    left:none;
+    right:none;
   }
   margin:{
-    bottom:2rem;
+    right:0;
+    left: 0;
+    top: 5rem;
+  }
+  h1{
+    color: white;
+    display: flex;
+    justify-content: flex-start;
+    top: 55%;
+    font-size: 5rem;
+    padding:{
+      left: 4rem;
+    }
+  }
+  h2{
+    color: white;
+    width: 50%;
+    position: absolute;
+    top: 72%;
+    font-size: 1.5rem;
+    padding:{
+      left: 2rem;
+    }
   }
 }
-.center-title-404{
-  text-align: center;
-  padding-top: 3rem;
+.bidouille{
+  opacity: 0;
 }
-.center-content-404{
-  text-align: center;
+@media (max-width:680px){
+  .contain-404{
+    height: 45vh;
+    h1{
+      font-size: 4rem;
+      padding:{
+        left: 1rem;
+      }
+      h2{
+        font-size: 2rem;
+        padding:{
+          left:1rem;
+        }
+      }
+    }
+  }
 }
