@@ -55,20 +55,11 @@ h1 {
   padding-top: 2rem;
 }
 .header .item-navigation a {
-  position: relative;
   text-decoration: none;
   color: white;
 }
 .header .item-navigation a:hover {
   color: #86EBBA;
-}
-.header .item-navigation a:hover::after {
-  content: "";
-  width: 50px;
-  height: 5px;
-  position: absolute;
-  left: 0;
-  bottom: -10px;
 }
 .header .item-navigation li {
   display: inline;
@@ -148,10 +139,6 @@ h1 {
 .pages-home button:hover {
   background-color: #895A9E;
   border-color: #895A9E;
-}
-
-p {
-  color: black;
 }
 
 .contain-404 {

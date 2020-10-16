@@ -23,19 +23,10 @@
   .item-navigation{
     padding-top: 2rem;
     a{
-      position: relative;
       text-decoration: none;
       color: white;
       &:hover{
         color: $greenLight;
-        &::after{
-          content: "";
-          width: 50px;
-          height: 5px;
-          position: absolute;
-          left: 0;
-          bottom: -10px;
-        }
       }
     }
     li{
