@@ -63,6 +63,46 @@ h1 {
   padding-left: 2rem;
 }
 
+.encadre-introduction {
+  position: relative;
+  border: 2px solid #531E6A;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  display: flex;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+.encadre-introduction img {
+  width: 15rem;
+  padding-right: 2rem;
+}
+.encadre-introduction p {
+  width: 75%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+}
+
+.presentation-home h1 {
+  margin-top: 5rem;
+  margin-bottom: 3rem;
+  color: #86EBBA;
+  text-align: center;
+  font-size: 2rem;
+}
+.presentation-home p {
+  width: 75%;
+  text-align: center;
+  margin-bottom: 5rem;
+}
+.presentation-home img {
+  display: flex;
+  justify-content: center;
+}
+
 p {
   color: black;
 }
