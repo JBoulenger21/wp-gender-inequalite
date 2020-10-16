@@ -1,11 +1,22 @@
 @import "../utils/variables";
 
+.front-page{
+    h1{
+        margin: {
+            bottom: 3rem;
+        }
+        color: $greenLight;
+        text-align: center;
+        font-size: 2rem;
+    }
+}
+
 .encadre-introduction{
     position: relative;
     border: 2px solid $purpleDark;
     margin: {
-        top: 5rem;
-        bottom: 5rem;
+        top: 8rem;
+        bottom: 8rem;
     }
     display: flex;
     padding: {
@@ -26,22 +37,60 @@
         right: 0;
     }
 }
+
 .presentation-home{
-    h1{
-        margin: {
-            top: 5rem;
-            bottom: 3rem;
-        }
-        color: $greenLight;
-        text-align: center;
-        font-size: 2rem;
+    margin: {
+        top: 8rem;
+        bottom: 8rem;
     }
     p{
         width: 75%;
         text-align: center;
-        margin-bottom: 5rem;
+        margin-bottom: 2rem;
+    }
+    .presentation-home-image{
+        text-align: center;
+    }
+}
+
+.pages-home{
+    margin: {
+        top: 8rem;
+        bottom: 8rem;
     }
     img{
-        
+        width: 10rem;
+    }
+    h2{
+        text-align: center;
+        font-size: 1.5rem;
+        color: $greenDark;
+        margin: {
+            top: 5rem;
+            bottom: 3rem;
+        }
+    }
+    p{
+        padding: {
+            left: 3rem;
+            right: 3rem;
+        }
+        margin: {
+            top: 2rem;
+            bottom: 2rem;
+        }
+    }
+    button{
+        background-color: $purpleLight;
+        color: $greenLight;
+        width: 10rem;
+        border: {
+            color: $purpleLight;
+            radius: 10px;
+        }
+        &:hover{
+            background-color: $purpleMedium;
+            border-color: $purpleMedium;
+        }
     }
 }
