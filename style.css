@@ -154,4 +154,51 @@ p {
   color: black;
 }
 
+.contain-404 {
+  display: flex;
+  justify-content: flex-start;
+  height: 55vh;
+  width: 40%;
+  border: solid 5px #86EBBA;
+  border-top: none;
+  border-right: none;
+  margin-right: 0;
+  margin-left: 0;
+  margin-top: 5rem;
+}
+.contain-404 h1 {
+  color: white;
+  display: flex;
+  justify-content: flex-start;
+  top: 55%;
+  font-size: 5rem;
+  padding-left: 4rem;
+}
+.contain-404 h2 {
+  color: white;
+  width: 50%;
+  position: absolute;
+  top: 72%;
+  font-size: 1.5rem;
+  padding-left: 2rem;
+}
+
+.bidouille {
+  opacity: 0;
+}
+
+@media (max-width: 680px) {
+  .contain-404 {
+    height: 45vh;
+  }
+  .contain-404 h1 {
+    font-size: 4rem;
+    padding-left: 1rem;
+  }
+  .contain-404 h1 h2 {
+    font-size: 2rem;
+    padding-left: 1rem;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
