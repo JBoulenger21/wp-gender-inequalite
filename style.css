@@ -107,4 +107,22 @@ p {
   color: black;
 }
 
+.contain-404 {
+  height: 20rem;
+  width: 100%;
+  border: solid 5px #531E6A;
+  border-top: none;
+  border-left: none;
+  margin-bottom: 2rem;
+}
+
+.center-title-404 {
+  text-align: center;
+  padding-top: 3rem;
+}
+
+.center-content-404 {
+  text-align: center;
+}
+
 /*# sourceMappingURL=style.css.map */

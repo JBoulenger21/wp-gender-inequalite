@@ -1,0 +1,21 @@
+@import "../utils/variables";
+
+.contain-404{
+  height: 20rem;
+  width: 100%;
+  border: solid 5px $purpleDark;
+  border:{
+    top:none;
+    left:none;
+  }
+  margin:{
+    bottom:2rem;
+  }
+}
+.center-title-404{
+  text-align: center;
+  padding-top: 3rem;
+}
+.center-content-404{
+  text-align: center;
+}
