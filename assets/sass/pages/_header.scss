@@ -1,3 +1,5 @@
+@import "../utils/variables";
+
 .header{
   background-image: url('assets/images/banner.png');
   background-repeat: no-repeat;
@@ -20,15 +22,18 @@
   }
   .item-navigation{
     padding-top: 2rem;
-  }
-  a{
-    text-decoration: none;
-    color: white;
-  }
-  li{
-    display: inline;
-    padding: {
-      left: 2rem;
+    a{
+      text-decoration: none;
+      color: white;
+      &:hover{
+        color: $greenLight;
+      }
+    }
+    li{
+      display: inline;
+      padding: {
+        left: 2rem;
+      }
     }
   }
 }
