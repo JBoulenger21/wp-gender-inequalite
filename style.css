@@ -56,7 +56,7 @@ h2 {
   position: absolute;
   top: 50%;
 }
-.header img {
+.header .logo {
   width: 8rem;
 }
 .header .navigation {
