@@ -8,7 +8,7 @@
     </div>
 
     <div class="presentation-home">
-        <h1>Présentation</h1>
+        <h2>Présentation</h2>
         <p class="mx-auto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit expedita maiores quod accusamus minus ullam temporibus repudiandae explicabo eos praesentium. Veritatis ullam repellendus voluptatum ipsam reprehenderit nostrum veniam distinctio. Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit expedita maiores quod accusamus minus ullam temporibus repudiandae explicabo eos praesentium. Veritatis ullam repellendus voluptatum ipsam reprehenderit nostrum veniam distinctio. Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit expedita maiores quod accusamus minus ullam temporibus repudiandae explicabo eos praesentium. Veritatis ullam repellendus voluptatum ipsam reprehenderit nostrum veniam distinctio. Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit expedita maiores quod accusamus minus ullam temporibus repudiandae explicabo eos praesentium. Veritatis ullam repellendus voluptatum ipsam reprehenderit nostrum veniam distinctio.</p>
         <div class="presentation-home-image mx-auto">
             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/girlspeak.png" alt="illustration femme megaphone">
@@ -16,7 +16,7 @@
     </div>
 
     <div class="pages-home">
-        <h1>Pages</h1>
+        <h2>Pages</h2>
         <div class="row">
 
         <?php 
@@ -28,7 +28,7 @@
             <?php while (have_posts()) : the_post(); ?>
 
             <div class="col-lg-6 text-center">
-                <h2><?php the_title(); ?></h2>
+                <h3><?php the_title(); ?></h3>
                 <?php the_post_thumbnail('post-thumbnail', ['class' => 'img-page-home img-fluid', 'alt' => 'icone section']); ?>
                 <div class="p-home"><?php the_content(); ?></div>
                 <button type="button" class="btn btn-lg btn-primary">Voir</button>

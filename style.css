@@ -14,6 +14,18 @@ h1 {
   font-family: "Sora";
 }
 
+h2 {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 3rem;
+  color: #86EBBA;
+  text-align: center;
+  font-size: 2rem;
+  background-color: #895A9E;
+  width: 25rem;
+  padding: 1rem;
+}
+
 @font-face {
   font-family: "Poppins";
   src: url("../fonts/Poppins-Italic.ttf");
@@ -66,13 +78,6 @@ h1 {
   padding-left: 2rem;
 }
 
-.front-page h1 {
-  margin-bottom: 3rem;
-  color: #86EBBA;
-  text-align: center;
-  font-size: 2rem;
-}
-
 .encadre-introduction-home {
   position: relative;
   border: 2px solid #531E6A;
@@ -116,7 +121,7 @@ h1 {
 .pages-home .img-page-home {
   width: 10rem;
 }
-.pages-home h2 {
+.pages-home h3 {
   text-align: center;
   font-size: 1.5rem;
   color: #629E81;
