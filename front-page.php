@@ -30,7 +30,7 @@
 
         <div class="p-presentation-home"><?php the_content(); ?></div>
         <div class="presentation-home-image mx-auto">
-        <?php the_post_thumbnail('post-thumbnail', ['class' => '', 'alt' => 'illustration presentation']); ?>
+        <?php the_post_thumbnail('post-thumbnail', ['class' => 'presentation-home-image img-fluid', 'alt' => 'illustration presentation']); ?>
         </div>
         <?php endwhile; ?>
     </div>
