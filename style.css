@@ -147,19 +147,23 @@ h1 {
 .chiffres .données {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 .chiffres .données .base-salaire {
-  width: 50%;
+  width: 45%;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
 }
 .chiffres .données .tableau-base {
-  width: 50%;
+  width: 45%;
 }
 .chiffres .données .tableau-base img {
   width: 100%;
 }
 .chiffres .sources {
   text-decoration: none;
+  margin: 0 0 0 auto;
 }
 
 .footer {

@@ -8,18 +8,22 @@
     .données{
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-around;
+        justify-content: space-between;
         .base-salaire{
-            width: 50%;
+            width: 45%;
+            display: flex;
+            flex-wrap: wrap;
+            align-content: center;
         }
         .tableau-base{
-            width: 50%;
+            width: 45%;
             img{
                 width: 100%;
             }
         }
     }
     .sources{
-         text-decoration: none;       
+        text-decoration: none;    
+        margin: 0 0 0 auto;   
     }
 }
