@@ -36,4 +36,38 @@
             text-align: center;
         }
     }
+    .cat{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        .cat-tableau{
+            width: 45%;
+            img{
+                width: 100%;
+            }
+        }
+        .social-article{
+            width: 45%;
+            display: flex;
+            flex-wrap: wrap;
+            align-content: center;
+        }
+    }
+    .ecart-niveau{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        .niveau-tableau{
+            width: 45%;
+            img{
+                width: 100%;
+            }
+        }
+        .niveau-article{
+            width: 45%;
+            display: flex;
+            flex-wrap: wrap;
+            align-content: center;
+        }
+    }
 }

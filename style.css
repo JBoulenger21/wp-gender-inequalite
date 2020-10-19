@@ -178,6 +178,40 @@ h2 {
 .chiffres .details h3 {
   text-align: center;
 }
+.chiffres .cat {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.chiffres .cat .cat-tableau {
+  width: 45%;
+}
+.chiffres .cat .cat-tableau img {
+  width: 100%;
+}
+.chiffres .cat .social-article {
+  width: 45%;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+}
+.chiffres .ecart-niveau {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.chiffres .ecart-niveau .niveau-tableau {
+  width: 45%;
+}
+.chiffres .ecart-niveau .niveau-tableau img {
+  width: 100%;
+}
+.chiffres .ecart-niveau .niveau-article {
+  width: 45%;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+}
 
 .footer {
   position: relative;
