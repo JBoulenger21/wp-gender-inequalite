@@ -18,6 +18,7 @@ h2 {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 3rem;
+  margin-top: 8rem;
   color: #86EBBA;
   text-align: center;
   font-size: 2rem;
@@ -89,11 +90,11 @@ h2 {
   padding-left: 2rem;
   padding-right: 2rem;
 }
-.encadre-introduction-home img {
+.encadre-introduction-home .img-intro-home {
   width: 15rem;
   padding-right: 2rem;
 }
-.encadre-introduction-home p {
+.encadre-introduction-home .p-intro-home {
   width: 75%;
   position: absolute;
   top: 50%;
@@ -105,10 +106,12 @@ h2 {
   margin-top: 8rem;
   margin-bottom: 8rem;
 }
-.presentation-home p {
+.presentation-home .p-presentation-home {
   width: 75%;
   text-align: center;
   margin-bottom: 2rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 .presentation-home .presentation-home-image {
   text-align: center;
