@@ -1,5 +1,7 @@
+@import "../utils/variables";
+
 .header{
-  background-image: url('assets/images/illustration-egalite-salariale-banniere.png');
+  background-image: url('assets/images/banner.png');
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
@@ -9,5 +11,29 @@
     width: 50%;
     position: absolute;
     top: 50%;
+  }
+  img{
+    width: 8rem;
+  }
+  .navigation{
+    padding-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+  }
+  .item-navigation{
+    padding-top: 2rem;
+    a{
+      text-decoration: none;
+      color: white;
+      &:hover{
+        color: $greenLight;
+      }
+    }
+    li{
+      display: inline;
+      padding: {
+        left: 2rem;
+      }
+    }
   }
 }

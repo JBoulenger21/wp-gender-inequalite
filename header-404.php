@@ -33,7 +33,10 @@
 
 
         </nav>
-        <h1>Les écarts de rémunération</h1>
+        <div class="container contain-404">
+          <h1>Oops<span class="bidouille">_</span>!</h1>
+          <h2>Page non trouvée. Retournez à l'accueil.</h2>
+        </div>
 
       </div>
 
