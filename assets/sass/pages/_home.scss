@@ -1,14 +1,7 @@
 @import "../utils/variables";
 
 .front-page{
-    h1{
-        margin: {
-            bottom: 3rem;
-        }
-        color: $greenLight;
-        text-align: center;
-        font-size: 2rem;
-    }
+    
 }
 
 .encadre-introduction-home{
@@ -58,10 +51,10 @@
         top: 8rem;
         bottom: 8rem;
     }
-    img{
+    .img-page-home{
         width: 10rem;
     }
-    h2{
+    h3{
         text-align: center;
         font-size: 1.5rem;
         color: $greenDark;
@@ -70,7 +63,7 @@
             bottom: 3rem;
         }
     }
-    p{
+    .p-home{
         padding: {
             left: 3rem;
             right: 3rem;
@@ -78,7 +71,7 @@
         margin: {
             top: 2rem;
             bottom: 2rem;
-        }
+        }    
     }
     button{
         background-color: $purpleLight;
