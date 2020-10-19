@@ -38,3 +38,13 @@
       </div>
 
     </header>
+
+    <style>
+      .header{
+        background-image: url('<?php header_image() ?>');
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+        width: 100%;
+      }
+    </style>
