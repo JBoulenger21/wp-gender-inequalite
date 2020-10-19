@@ -215,6 +215,18 @@ h2 {
   flex-wrap: wrap;
   align-content: center;
 }
+@media screen and (max-width: 995px) {
+  .chiffres .données {
+    display: block;
+  }
+  .chiffres .données .base-salaire {
+    width: 100%;
+  }
+  .chiffres .données .tableau-base {
+    width: 90%;
+    margin: auto;
+  }
+}
 
 .footer {
   position: relative;
