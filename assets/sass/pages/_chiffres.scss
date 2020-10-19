@@ -1,2 +1,25 @@
 @import "../utils/variables";
 
+// Style de la page "Les chiffres des inégalitées"
+.chiffres{
+    h2{
+        text-align: center;
+    }
+    .données{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        .base-salaire{
+            width: 50%;
+        }
+        .tableau-base{
+            width: 50%;
+            img{
+                width: 100%;
+            }
+        }
+    }
+    .source{
+         text-decoration: none;       
+    }
+}
