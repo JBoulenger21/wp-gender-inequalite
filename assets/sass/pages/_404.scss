@@ -1,5 +1,9 @@
 @import "../utils/variables";
-
+.background404{
+  height: 100%;
+  width: 100%;
+  background-color: $purpleDark;
+}
 .contain-404{
   display: flex;
   justify-content: flex-start;
@@ -15,26 +19,31 @@
     left: 0;
     top: 5rem;
   }
-  h1{
-    color: white;
-    display: flex;
-    justify-content: flex-start;
-    top: 55%;
-    font-size: 5rem;
-    padding:{
-      left: 4rem;
+    h1{
+      color: white;
+      display: flex;
+      justify-content: flex-start;
+      top: 55%;
+      font-size: 5rem;
+      padding:{
+        left: 4rem;
+      }
     }
-  }
   h2{
     color: white;
     width: 50%;
     position: absolute;
     top: 72%;
     font-size: 1.5rem;
+    background-color: transparent!important;
     padding:{
-      left: 2rem;
+      left: 1rem;
     }
+    text-align: left;
   }
+}
+.truc{
+
 }
 .bidouille{
   opacity: 0;

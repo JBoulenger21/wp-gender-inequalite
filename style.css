@@ -146,6 +146,16 @@ h2 {
   border-color: #895A9E;
 }
 
+.cause {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.causeContent {
+  width: 20rem;
+}
+
 .footer {
   position: relative;
   margin-top: 5rem;
@@ -156,6 +166,12 @@ h2 {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
+}
+
+.background404 {
+  height: 100%;
+  width: 100%;
+  background-color: #531E6A;
 }
 
 .contain-404 {
@@ -184,7 +200,9 @@ h2 {
   position: absolute;
   top: 72%;
   font-size: 1.5rem;
-  padding-left: 2rem;
+  background-color: transparent !important;
+  padding-left: 1rem;
+  text-align: left;
 }
 
 .bidouille {
