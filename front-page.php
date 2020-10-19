@@ -30,7 +30,7 @@
             <div class="col-lg-6 text-center">
                 <h2><?php the_title(); ?></h2>
                 <?php the_post_thumbnail('post-thumbnail', ['class' => 'img-page-home img-fluid', 'alt' => 'icone section']); ?>
-                <?php the_content(); ?>
+                <div class="p-home"><?php the_content(); ?></div>
                 <button type="button" class="btn btn-lg btn-primary">Voir</button>
             </div>
 
