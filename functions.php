@@ -23,8 +23,6 @@ function register_my_menu() {
 register_nav_menu('navigation-hf',__('navigation-hf'));
 }
 
-<<<<<<< HEAD
-=======
 function sections_custom_post_type() {
 	$labels = array(
 		'name'                => 'sections',
@@ -79,11 +77,9 @@ function cause_custom_post_types() {
 }
 
 
->>>>>>> dacfeeada29facace19a0918870245308fda52a5
 add_action('after_setup_theme','montheme_supports');
 add_action('wp_enqueue_scripts', 'montheme_register_assets');
 add_filter('document_title_separator', 'montheme_title_separator');
 add_action( 'init', 'register_my_menu' );
 add_action( 'init', 'sections_custom_post_type' );
 add_action( 'init', 'cause_custom_post_types' );
-

@@ -1,1 +1,10 @@
 @import "../utils/variables";
+
+.cause{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+.causeContent{
+  width: 20rem;
+}
