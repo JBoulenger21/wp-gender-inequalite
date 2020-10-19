@@ -73,7 +73,7 @@ h1 {
   font-size: 2rem;
 }
 
-.encadre-introduction {
+.encadre-introduction-home {
   position: relative;
   border: 2px solid #531E6A;
   margin-top: 8rem;
@@ -84,11 +84,11 @@ h1 {
   padding-left: 2rem;
   padding-right: 2rem;
 }
-.encadre-introduction img {
+.encadre-introduction-home img {
   width: 15rem;
   padding-right: 2rem;
 }
-.encadre-introduction p {
+.encadre-introduction-home p {
   width: 75%;
   position: absolute;
   top: 50%;
