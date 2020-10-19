@@ -43,20 +43,13 @@ h2 {
   src: url("../fonts/Sora-Regular.ttf");
   src: url("../fonts/Sora-SemiBold.ttf");
 }
-.header {
-  background-image: url("assets/images/banner.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 100vh;
-  width: 100%;
-}
 .header h1 {
   color: white;
   width: 50%;
   position: absolute;
   top: 50%;
 }
-.header img {
+.header .logo {
   width: 8rem;
 }
 .header .navigation {
