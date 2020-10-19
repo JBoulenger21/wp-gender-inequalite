@@ -9,24 +9,27 @@ get_header();
 <h1>Causes</h1>
 
 <?php
-  query_posts(array(
+  $cause = get_posts(array(
   'post_type' => 'cause',
-  'showposts' => 3
+  'showposts' => 3,
   ) );
- if (have_posts()): while (have_posts()) : the_post();
-foreach ($post as $post) {
-  $i = 0;
+$i = 0;
+ while (have_posts()) : the_post();
+ ?>
+<div class="causeDesktop">
+ <?php
+foreach ($cause as $post) {
   $i++;
   if ($i % 2 == 0){
 ?>
 <div class="row cause">
-  <div class="col-lg-6">
-      <?php the_post_thumbnail('medium',[ 'alt' => '']) ?>
+  <div class="col-lg-6 col-sm-12">
+      <?php the_post_thumbnail('thumbnail',[ 'alt' => '']) ?>
   </div>
-  <div class="col-lg-6">
-      <h2><?php the_title(); ?></h2>
+  <div class="col-lg-6 col-sm-12">
+      <h3><?php the_title(); ?></h3>
       <div class="causeContent">
-       <?php the_content(); ?>
+       <?php the_excerpt(); ?>
       </div>
   </div>
 </div>
@@ -35,23 +38,41 @@ foreach ($post as $post) {
 } else{
   ?>
   <div class="row cause">
-    <div class="col-lg-6">
-        <h2><?php the_title(); ?></h2>
+    <div class="col-lg-6 col-sm-12">
+        <h3><?php the_title(); ?></h3>
         <div class="causeContent">
-         <?php the_content(); ?>
+         <?php the_excerpt(); ?>
         </div>
     </div>
-    <div class="col-lg-6">
+    <div class="col-lg-6 col-sm-12">
         <?php the_post_thumbnail('medium',[ 'alt' => '']) ?>
     </div>
   </div>
 <?php
 }
 }
+endwhile;
+
+query_posts(array(
+'post_type' => 'cause',
+'showposts' => 3,
+) );
+while (have_posts()) : the_post();
  ?>
+</div>
+<div class="causeResponsive">
+  <div class="row cause">
+    <div class="col-12">
+        <h3><?php the_title(); ?></h3>
+        <div class="causeContent">
+         <?php the_content(); ?>
+        </div>
+        <?php the_post_thumbnail('medium',[ 'alt' => '']) ?>
+    </div>
+  </div>
+</div>
 
 
-
-<?php endwhile; endif;?>
+<?php endwhile; ?>
 </div>
 <?php get_footer();?>
