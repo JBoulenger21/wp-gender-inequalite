@@ -9,9 +9,9 @@ get_header();
 <h1>Causes</h1>
 
 <?php
-  $cause = query_posts(array(
+  $cause = get_posts(array(
   'post_type' => 'cause',
-  'showposts' => 3
+  'showposts' => 3,
   ) );
 $i = 0;
  while (have_posts()) : the_post();
@@ -20,13 +20,13 @@ foreach ($cause as $post) {
   if ($i % 2 == 0){
 ?>
 <div class="row cause">
-  <div class="col-lg-6">
+  <div class="col-lg-6 col-sm-12">
       <?php the_post_thumbnail('medium',[ 'alt' => '']) ?>
   </div>
-  <div class="col-lg-6">
+  <div class="col-lg-6 col-sm-12">
       <h3><?php the_title(); ?></h3>
       <div class="causeContent">
-       <?php the_content(); ?>
+       <?php the_excerpt(); ?>
       </div>
   </div>
 </div>
@@ -35,13 +35,13 @@ foreach ($cause as $post) {
 } else{
   ?>
   <div class="row cause">
-    <div class="col-lg-6">
+    <div class="col-lg-6 col-sm-12">
         <h3><?php the_title(); ?></h3>
         <div class="causeContent">
-         <?php the_content(); ?>
+         <?php the_excerpt(); ?>
         </div>
     </div>
-    <div class="col-lg-6">
+    <div class="col-lg-6 col-sm-12">
         <?php the_post_thumbnail('medium',[ 'alt' => '']) ?>
     </div>
   </div>
