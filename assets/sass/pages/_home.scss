@@ -36,10 +36,14 @@
         top: 8rem;
         bottom: 8rem;
     }
-    p{
+    .p-presentation-home{
         width: 75%;
         text-align: center;
-        margin-bottom: 2rem;
+        margin: {
+            bottom: 2rem;
+            left: auto;
+            right: auto;
+        }
     }
     .presentation-home-image{
         text-align: center;
