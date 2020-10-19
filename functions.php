@@ -23,6 +23,37 @@ function register_my_menu() {
 register_nav_menu('navigation-hf',__('navigation-hf'));
 }
 
+function introduction_custom_post_type() {
+	$labels = array(
+		'name'                => 'introduction',
+		'singular_name'       => 'introduction',
+		'menu_name'           => 'introduction',
+		'all_items'           => 'Toutes les introductions',
+		'view_item'           => 'Voir les introductions',
+		'add_new_item'        => 'Ajouter une nouvelle introduction',
+		'add_new'             => 'Ajouter',
+		'edit_item'           => 'Editer la introduction',
+		'update_item'         => 'Modifier la introduction',
+		'search_items'        => 'Rechercher une introduction',
+		'not_found'           => 'Non trouvée',
+		'not_found_in_trash'  => 'Non trouvée dans la corbeille',
+	);
+	$args = array(
+		'label'               => 'introduction',
+		'description'         => 'Tous sur les évènements',
+		'labels'              => $labels,
+    'menu_icon'           => 'dashicons-format-status',
+    'menu_position'       => 5,
+		'supports'            => array( 'title', 'editor', 'excerpt', 'author', 'thumbnail', 'comments', 'revisions', 'custom-fields', ),
+		'show_in_rest'        => true,
+		'hierarchical'        => false,
+		'public'              => true,
+		'has_archive'         => true,
+		'rewrite'			        => array( 'slug' => 'information'),
+	);
+	register_post_type( 'introduction', $args );
+}
+
 function presentation_custom_post_type() {
 	$labels = array(
 		'name'                => 'presentation',
@@ -115,4 +146,4 @@ add_action( 'init', 'register_my_menu' );
 add_action( 'init', 'sections_custom_post_type' );
 add_action( 'init', 'cause_custom_post_types' );
 add_action( 'init', 'presentation_custom_post_type' );
-
+add_action( 'init', 'introduction_custom_post_type' );

@@ -3,8 +3,18 @@
 <div class="container front-page">
 
     <div class="encadre-introduction-home">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/trans.png" alt="illustration et logo transgenre">
-        <p class="py-auto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit expedita maiores quod accusamus minus ullam temporibus repudiandae explicabo eos praesentium. Veritatis ullam repellendus voluptatum ipsam reprehenderit nostrum veniam distinctio. Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit expedita maiores quod accusamus minus ullam temporibus repudiandae explicabo eos praesentium. Veritatis ullam repellendus voluptatum ipsam reprehenderit nostrum veniam distinctio.</p>
+        <?php
+        query_posts(array(
+        'post_type' => 'introduction',
+        'showposts' => 1
+        ) );
+        ?>
+        <?php while (have_posts()) : the_post(); ?>
+
+        <?php the_post_thumbnail('post-thumbnail', ['class' => 'img-intro-home img-fluid', 'alt' => '']); ?>
+        <div class="py-auto p-intro-home"><?php the_content(); ?></div>
+
+        <?php endwhile; ?>
     </div>
 
     <div class="presentation-home">

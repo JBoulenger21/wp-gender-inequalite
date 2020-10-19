@@ -90,11 +90,11 @@ h2 {
   padding-left: 2rem;
   padding-right: 2rem;
 }
-.encadre-introduction-home img {
+.encadre-introduction-home .img-intro-home {
   width: 15rem;
   padding-right: 2rem;
 }
-.encadre-introduction-home p {
+.encadre-introduction-home .p-intro-home {
   width: 75%;
   position: absolute;
   top: 50%;
