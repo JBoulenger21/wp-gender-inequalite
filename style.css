@@ -141,7 +141,6 @@ h1 {
   border-color: #895A9E;
 }
 
-<<<<<<< HEAD
 .contain-404 {
   display: flex;
   justify-content: flex-start;
@@ -187,7 +186,6 @@ h1 {
     font-size: 2rem;
     padding-left: 1rem;
   }
-=======
 .footer {
   position: relative;
   margin-top: 5rem;
@@ -198,7 +196,6 @@ h1 {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
->>>>>>> home
 }
 
 /*# sourceMappingURL=style.css.map */
