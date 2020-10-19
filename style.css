@@ -14,6 +14,18 @@ h1 {
   font-family: "Sora";
 }
 
+h2 {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 3rem;
+  color: #86EBBA;
+  text-align: center;
+  font-size: 2rem;
+  background-color: #895A9E;
+  width: 25rem;
+  padding: 1rem;
+}
+
 @font-face {
   font-family: "Poppins";
   src: url("../fonts/Poppins-Italic.ttf");
@@ -66,14 +78,7 @@ h1 {
   padding-left: 2rem;
 }
 
-.front-page h1 {
-  margin-bottom: 3rem;
-  color: #86EBBA;
-  text-align: center;
-  font-size: 2rem;
-}
-
-.encadre-introduction {
+.encadre-introduction-home {
   position: relative;
   border: 2px solid #531E6A;
   margin-top: 8rem;
@@ -84,11 +89,11 @@ h1 {
   padding-left: 2rem;
   padding-right: 2rem;
 }
-.encadre-introduction img {
+.encadre-introduction-home img {
   width: 15rem;
   padding-right: 2rem;
 }
-.encadre-introduction p {
+.encadre-introduction-home p {
   width: 75%;
   position: absolute;
   top: 50%;
@@ -113,17 +118,17 @@ h1 {
   margin-top: 8rem;
   margin-bottom: 8rem;
 }
-.pages-home img {
+.pages-home .img-page-home {
   width: 10rem;
 }
-.pages-home h2 {
+.pages-home h3 {
   text-align: center;
   font-size: 1.5rem;
   color: #629E81;
   margin-top: 5rem;
   margin-bottom: 3rem;
 }
-.pages-home p {
+.pages-home .p-home {
   padding-left: 3rem;
   padding-right: 3rem;
   margin-top: 2rem;
@@ -164,6 +169,14 @@ h1 {
 .chiffres .sources {
   text-decoration: none;
   margin: 0 0 0 auto;
+  font-size: smaller;
+  color: black;
+}
+.chiffres .sources:hover {
+  color: #86EBBA;
+}
+.chiffres .details h3 {
+  text-align: center;
 }
 
 .footer {

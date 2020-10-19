@@ -24,6 +24,16 @@
     }
     .sources{
         text-decoration: none;    
-        margin: 0 0 0 auto;   
+        margin: 0 0 0 auto; 
+        font-size: smaller;  
+        color: black;
+        &:hover{
+            color: $greenLight;
+        }
+    }
+    .details{
+        h3{
+            text-align: center;
+        }
     }
 }
