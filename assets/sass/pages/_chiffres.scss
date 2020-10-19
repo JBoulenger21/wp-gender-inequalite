@@ -16,9 +16,11 @@
             align-content: center;
         }
         .tableau-base{
+            background-color: $purpleLight;
             width: 45%;
             img{
                 width: 100%;
+                opacity: 0.9;
             }
         }
     }
@@ -59,8 +61,10 @@
         justify-content: space-between;
         .niveau-tableau{
             width: 45%;
+            background-color: $purpleLight;
             img{
                 width: 100%;
+                opacity: 0.9;
             }
         }
         .niveau-article{

@@ -157,10 +157,12 @@ h2 {
   align-content: center;
 }
 .chiffres .données .tableau-base {
+  background-color: #D29EEB;
   width: 45%;
 }
 .chiffres .données .tableau-base img {
   width: 100%;
+  opacity: 0.9;
 }
 .chiffres .sources {
   text-decoration: none;
@@ -198,9 +200,11 @@ h2 {
 }
 .chiffres .ecart-niveau .niveau-tableau {
   width: 45%;
+  background-color: #D29EEB;
 }
 .chiffres .ecart-niveau .niveau-tableau img {
   width: 100%;
+  opacity: 0.9;
 }
 .chiffres .ecart-niveau .niveau-article {
   width: 45%;
