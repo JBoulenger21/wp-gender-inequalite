@@ -109,7 +109,7 @@ function presentation_custom_post_type() {
 
 function sections_custom_post_type() {
 	$labels = array(
-		'name'                => 'sections',
+		'name'                => 'Pages',
 		'singular_name'       => 'sections',
 		'menu_name'           => 'sections',
 		'all_items'           => 'Toutes les sections',
