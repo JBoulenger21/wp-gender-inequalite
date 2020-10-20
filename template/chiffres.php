@@ -30,14 +30,14 @@ get_header();
                 </div>
                 <div class="social-article">
                     <h4>Les catégories sociales</h4>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio eligendi maxime facere excepturi, ullam inventore saepe, earum quos non officiis quidem, quisquam tempora nesciunt. In eligendi laborum doloribus ea explicabo!</p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio eligendi maxime facere excepturi, ullam inventore saepe, earum quos non officiis quidem, quisquam tempora nesciunt. In eligendi laborum doloribus ea explicabo! Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit voluptas minima aperiam neque, ab placeat quis dolorem eligendi? Voluptate nesciunt sequi eligendi incidunt reiciendis voluptatum autem. Magni obcaecati laborum dicta!</p>
                     <a href="https://www.inegalites.fr/Les-inegalites-de-salaires-entre-les-femmes-et-les-hommes-etat-des-lieux?id_theme=22" target="_blank" rel="noopener" class="sources">(sources)</a>
                 </div>
             </div>
             <div class="ecart-niveau">              
                 <div class="niveau-article">
                     <h4>Les niveaux de rémunération</h4>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio eligendi maxime facere excepturi, ullam inventore saepe, earum quos non officiis quidem, quisquam tempora nesciunt. In eligendi laborum doloribus ea explicabo!</p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio eligendi maxime facere excepturi, ullam inventore saepe, earum quos non officiis quidem, quisquam tempora nesciunt. In eligendi laborum doloribus ea explicabo! Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem veritatis cum animi harum nisi ab id doloribus fuga pariatur sapiente numquam molestias eligendi voluptates praesentium velit reiciendis est, modi expedita. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium adipisci harum tenetur fuga quam dolor sequi at vel eligendi optio omnis eveniet, error enim, velit debitis, assumenda veniam tempora veritatis.</p>
                     <a href="https://www.inegalites.fr/Les-inegalites-de-salaires-entre-les-femmes-et-les-hommes-etat-des-lieux?id_theme=22" target="_blank" rel="noopener" class="sources">(sources)</a>
                 </div>
                 <div class="niveau-tableau">
