@@ -1,2 +1,95 @@
 @import "../utils/variables";
 
+// Style de la page "Les chiffres des inégalitées"
+.chiffres{
+    h2{
+        text-align: center;
+    }
+    .données{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        .base-salaire{
+            width: 45%;
+            display: flex;
+            flex-wrap: wrap;
+            align-content: center;
+        }
+        .tableau-base{
+            background-color: $purpleLight;
+            width: 45%;
+            img{
+                width: 100%;
+                opacity: 0.9;
+            }
+        }
+    }
+    .sources{
+        text-decoration: none;    
+        margin: 0 0 0 auto; 
+        font-size: smaller;  
+        color: black;
+        &:hover{
+            color: $greenLight;
+        }
+    }
+    .details{
+        h3{
+            text-align: center;
+        }
+        .articles-details{
+            div{
+                margin: 2% 0;
+            }
+        }
+    }
+    .tab-left{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        .img-tableau{
+            width: 45%;
+            img{
+                width: 100%;
+            }
+        }
+        .article{
+            width: 45%;
+            display: flex;
+            flex-wrap: wrap;
+            align-content: center;
+        }
+    }
+    .tab-right{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        .img-tableau{
+            width: 45%;
+            background-color: $purpleLight;
+            img{
+                width: 100%;
+                opacity: 0.9;
+            }
+        }
+        .article{
+            width: 45%;
+            display: flex;
+            flex-wrap: wrap;
+            align-content: center;
+        }
+    }
+// media queries page données chiffrées
+    @media screen and (max-width: 995px) {
+        .données{
+            display: block;
+            .base-salaire{
+                width: 100%;
+            }
+            .tableau-base{
+                width: 90%;
+                margin: auto;
+            }
+        }
+    }
+}

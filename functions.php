@@ -159,6 +159,36 @@ function cause_custom_post_types() {
   );
   register_post_type( 'cause', $args );
 }
+function chiffre_base_custom_post_type() {
+	$labels = array(
+		'name'                => 'Données chiffrées',
+		'singular_name'       => 'Données chiffrées',
+		'menu_name'           => 'Données chiffrées',
+		'all_items'           => 'Données chiffrées',
+		'view_item'           => 'Voir Données chiffrées',
+		'add_new_item'        => 'Ajouter une nouvelle donnée',
+		'add_new'             => 'Ajouter',
+		'edit_item'           => 'Editer la presentation',
+		'update_item'         => 'Modifier la presentation',
+		'search_items'        => 'Rechercher une presentation',
+		'not_found'           => 'Non trouvée',
+		'not_found_in_trash'  => 'Non trouvée dans la corbeille',
+	);
+	$args = array(
+		'label'               => 'données chiffrées',
+		'description'         => 'Tous sur les évènements',
+		'labels'              => $labels,
+    'menu_icon'           => 'dashicons-edit-large',
+    'menu_position'       => 5,
+		'supports'            => array( 'title', 'editor', 'excerpt', 'author', 'thumbnail', 'comments', 'revisions', 'custom-fields', ),
+		'show_in_rest'        => true,
+		'hierarchical'        => false,
+		'public'              => true,
+		'has_archive'         => true,
+		'rewrite'			        => array( 'slug' => 'information'),
+	);
+	register_post_type( 'chiffre_base', $args );
+}
 
 function consequence_custom_post_types() {
   // CPT causes conséquences
@@ -194,5 +224,6 @@ add_action( 'init', 'cause_custom_post_types' );
 add_action( 'init', 'consequence_custom_post_types' );
 add_action( 'init', 'presentation_custom_post_type' );
 add_action( 'init', 'introduction_custom_post_type' );
+add_action( 'init', 'chiffre_base_custom_post_type' );
 add_action( 'after_setup_theme', 'themename_custom_logo_setup' );
 add_action( 'after_setup_theme', 'themename_custom_header_setup' );

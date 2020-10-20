@@ -146,6 +146,92 @@ h3 {
   border-color: #895A9E;
 }
 
+.chiffres h2 {
+  text-align: center;
+}
+.chiffres .données {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.chiffres .données .base-salaire {
+  width: 45%;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+}
+.chiffres .données .tableau-base {
+  background-color: #D29EEB;
+  width: 45%;
+}
+.chiffres .données .tableau-base img {
+  width: 100%;
+  opacity: 0.9;
+}
+.chiffres .sources {
+  text-decoration: none;
+  margin: 0 0 0 auto;
+  font-size: smaller;
+  color: black;
+}
+.chiffres .sources:hover {
+  color: #86EBBA;
+}
+.chiffres .details h3 {
+  text-align: center;
+}
+.chiffres .details .articles-details div {
+  margin: 2% 0;
+}
+.chiffres .tab-left {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.chiffres .tab-left .img-tableau {
+  width: 45%;
+}
+.chiffres .tab-left .img-tableau img {
+  width: 100%;
+}
+.chiffres .tab-left .article {
+  width: 45%;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+}
+.chiffres .tab-right {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.chiffres .tab-right .img-tableau {
+  width: 45%;
+  background-color: #D29EEB;
+}
+.chiffres .tab-right .img-tableau img {
+  width: 100%;
+  opacity: 0.9;
+}
+.chiffres .tab-right .article {
+  width: 45%;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+}
+@media screen and (max-width: 995px) {
+  .chiffres .données {
+    display: block;
+  }
+  .chiffres .données .base-salaire {
+    width: 100%;
+  }
+  .chiffres .données .tableau-base {
+    width: 90%;
+    margin: auto;
+  }
+}
+
 .cause {
   display: flex;
   flex-direction: row;
