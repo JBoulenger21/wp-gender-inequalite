@@ -4,10 +4,10 @@
 
     <div class="encadre-introduction-home">
         <?php
-        query_posts(array(
-        'post_type' => 'introduction',
-        'showposts' => 1
-        ) );
+            query_posts(array(
+            'post_type' => 'introduction',
+            'showposts' => 1
+            ) );
         ?>
         <?php while (have_posts()) : the_post(); ?>
 
@@ -18,15 +18,15 @@
     </div>
 
     <div class="presentation-home">
-        <h2>Présentation</h2>
-
         <?php
-        query_posts(array(
-        'post_type' => 'presentation',
-        'showposts' => 1
-        ) );
+            query_posts(array(
+            'post_type' => 'presentation',
+            'showposts' => 1
+            ) );
         ?>
         <?php while (have_posts()) : the_post(); ?>
+
+        <h2><?php the_title(); ?></h2>
 
         <div class="p-presentation-home"><?php the_content(); ?></div>
         <div class="presentation-home-image mx-auto">
