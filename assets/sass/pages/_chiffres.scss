@@ -37,29 +37,34 @@
         h3{
             text-align: center;
         }
+        .articles-details{
+            div{
+                margin: 2% 0;
+            }
+        }
     }
-    .cat{
+    .tab-left{
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-        .cat-tableau{
+        .img-tableau{
             width: 45%;
             img{
                 width: 100%;
             }
         }
-        .social-article{
+        .article{
             width: 45%;
             display: flex;
             flex-wrap: wrap;
             align-content: center;
         }
     }
-    .ecart-niveau{
+    .tab-right{
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-        .niveau-tableau{
+        .img-tableau{
             width: 45%;
             background-color: $purpleLight;
             img{
@@ -67,7 +72,7 @@
                 opacity: 0.9;
             }
         }
-        .niveau-article{
+        .article{
             width: 45%;
             display: flex;
             flex-wrap: wrap;

@@ -146,7 +146,6 @@ h3 {
   border-color: #895A9E;
 }
 
-<<<<<<< HEAD
 .chiffres h2 {
   text-align: center;
 }
@@ -181,37 +180,40 @@ h3 {
 .chiffres .details h3 {
   text-align: center;
 }
-.chiffres .cat {
+.chiffres .details .articles-details div {
+  margin: 2% 0;
+}
+.chiffres .tab-left {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
-.chiffres .cat .cat-tableau {
+.chiffres .tab-left .img-tableau {
   width: 45%;
 }
-.chiffres .cat .cat-tableau img {
+.chiffres .tab-left .img-tableau img {
   width: 100%;
 }
-.chiffres .cat .social-article {
+.chiffres .tab-left .article {
   width: 45%;
   display: flex;
   flex-wrap: wrap;
   align-content: center;
 }
-.chiffres .ecart-niveau {
+.chiffres .tab-right {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
-.chiffres .ecart-niveau .niveau-tableau {
+.chiffres .tab-right .img-tableau {
   width: 45%;
   background-color: #D29EEB;
 }
-.chiffres .ecart-niveau .niveau-tableau img {
+.chiffres .tab-right .img-tableau img {
   width: 100%;
   opacity: 0.9;
 }
-.chiffres .ecart-niveau .niveau-article {
+.chiffres .tab-right .article {
   width: 45%;
   display: flex;
   flex-wrap: wrap;
@@ -262,8 +264,6 @@ h3 {
     text-align: center;
   }
 }
-=======
->>>>>>> develop
 .footer {
   position: relative;
   margin-top: 5rem;
@@ -276,15 +276,12 @@ h3 {
   transform: translateY(-50%);
 }
 
-<<<<<<< HEAD
 .background404 {
   height: 100%;
   width: 100%;
   background-color: #531E6A;
 }
 
-=======
->>>>>>> develop
 .contain-404 {
   display: flex;
   justify-content: flex-start;
