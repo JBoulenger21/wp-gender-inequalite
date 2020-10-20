@@ -36,7 +36,7 @@ get_header();
         <?php
             query_posts( array(
                 'post_type' => 'detail',
-                'showposts' => 3,
+                'showposts' => 5,
                 'order' => 'ASC'
             ) );
         ?>

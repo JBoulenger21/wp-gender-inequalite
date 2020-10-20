@@ -33,7 +33,7 @@
 
 
         </nav>
-        <h1>Les écarts de rémunération</h1>
+        <h1><?php echo bloginfo('name'); ?></h1>
 
 
       </div>
