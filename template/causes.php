@@ -15,11 +15,13 @@ get_header();
   'order' => 'ASC'
   ) );
 $i = 0;
- while (have_posts()) : the_post();
+while (have_posts()) : the_post();
  ?>
 <div class="causeDesktop">
  <?php
+
 foreach ($cause as $post) {
+
   $i++;
   if ($i % 2 == 0){
 ?>
@@ -51,6 +53,7 @@ foreach ($cause as $post) {
   </div>
 <?php
 }
+
 }
 endwhile;
 
@@ -85,18 +88,29 @@ while (have_posts()) : the_post();
 <h1>Conséquences</h1>
 
 <?php
-  $consequence = get_posts(array(
-  'post_type' => 'consequence',
-  'showposts' => 1,
-  'numberposts'=> 1,
-  'order' => 'ASC'
-  ) );
+$consequence = query_posts(array(
+'post_type' => 'consequence',
+'showposts' => 3,
+'numberposts' => 3,
+'order' => 'ASC'
+) );
+$consequence2 = get_posts(array(
+'post_type' => 'consequence',
+'showposts' => 3,
+'numberposts' => 3,
+'order' => 'ASC'
+) );
+var_dump($consequence);
+echo "blablabla";
+var_dump($consequence2);
 $i = 0;
+while (have_posts()) : the_post();
  ?>
 <div class="causeDesktop">
  <?php
+
 foreach ($consequence as $post2) {
-  while (have_posts()) : the_post();
+
   $i++;
   if ($i % 2 != 0){
 ?>
@@ -107,7 +121,7 @@ foreach ($consequence as $post2) {
   <div class="col-lg-6 col-sm-12">
       <h3><?php the_title(); ?></h3>
       <div class="causeContent">
-       <?php the_excerpt(); ?>
+       <?php the_content(); ?>
       </div>
   </div>
 </div>
@@ -119,19 +133,24 @@ foreach ($consequence as $post2) {
     <div class="col-lg-6 col-sm-12">
         <h3><?php the_title(); ?></h3>
         <div class="causeContent">
-         <?php the_excerpt(); ?>
+         <?php the_content(); ?>
         </div>
     </div>
     <div class="col-lg-6 col-sm-12">
         <?php the_post_thumbnail('medium',[ 'alt' => '']) ?>
     </div>
   </div>
+
 <?php
 }
-endwhile;
+
 }
+endwhile;
+?>
+</div>
 
 
+<?php
 query_posts(array(
 'post_type' => 'consequence',
 'showposts' => 3,
@@ -140,7 +159,7 @@ query_posts(array(
 ) );
 while (have_posts()) : the_post();
  ?>
-</div>
+
 <div class="causeResponsive">
   <div class="row cause">
     <div class="col-12">
