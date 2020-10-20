@@ -146,6 +146,7 @@ h3 {
   border-color: #895A9E;
 }
 
+<<<<<<< HEAD
 .chiffres h2 {
   text-align: center;
 }
@@ -261,6 +262,8 @@ h3 {
     text-align: center;
   }
 }
+=======
+>>>>>>> develop
 .footer {
   position: relative;
   margin-top: 5rem;
@@ -273,12 +276,15 @@ h3 {
   transform: translateY(-50%);
 }
 
+<<<<<<< HEAD
 .background404 {
   height: 100%;
   width: 100%;
   background-color: #531E6A;
 }
 
+=======
+>>>>>>> develop
 .contain-404 {
   display: flex;
   justify-content: flex-start;
