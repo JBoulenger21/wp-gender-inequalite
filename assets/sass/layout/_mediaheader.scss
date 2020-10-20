@@ -1,0 +1,14 @@
+@import "../utils/variables";
+
+@media (max-width: 680px){
+    .header{
+        background-size: contain;
+        height: 100vh;
+        li{
+            display: block!important;
+        }
+        h1{
+            text-align: center;
+        }
+    }
+}

@@ -1,5 +1,19 @@
 @import "../utils/variables";
 
-@media (max-width: 780px){
-    
+@media screen and (max-width: 993px) and (min-width: 770px){
+    .encadre-introduction-home{
+        display: flex;
+        .img-intro-home{
+            width: 15rem;
+            // margin-left: auto;
+            // margin-right: auto;
+            padding-right: 2rem;
+            margin: 0;
+        }
+        .p-intro-home{
+            width: 60%;
+            margin-right: 2rem;
+            margin-left: auto;
+        }
+    }
 }
