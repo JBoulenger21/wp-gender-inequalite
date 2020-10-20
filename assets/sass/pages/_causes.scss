@@ -14,20 +14,3 @@
 .causeResponsive{
   display: none;
 }
-
-@media screen and (max-width:680px){
-  .cause{
-    display: flex;
-    flex-wrap: wrap;
-  }
-  .causeDesktop{
-    display: none;
-  }
-  .causeResponsive{
-    display: block;
-    text-align: center;
-  }
-  h1{
-    text-align: center;
-  }
-}
