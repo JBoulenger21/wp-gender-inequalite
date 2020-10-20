@@ -1,1 +1,15 @@
 @import "../utils/variables";
+
+// media queries page données chiffrées
+@media screen and (max-width: 995px) {
+    .données{
+        display: block;
+        .base-salaire{
+            width: 100%;
+        }
+        .tableau-base{
+            width: 90%;
+            margin: auto;
+        }
+    }
+}

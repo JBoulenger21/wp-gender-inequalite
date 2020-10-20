@@ -219,18 +219,6 @@ h3 {
   flex-wrap: wrap;
   align-content: center;
 }
-@media screen and (max-width: 995px) {
-  .chiffres .données {
-    display: block;
-  }
-  .chiffres .données .base-salaire {
-    width: 100%;
-  }
-  .chiffres .données .tableau-base {
-    width: 90%;
-    margin: auto;
-  }
-}
 
 .cause {
   display: flex;
@@ -328,6 +316,18 @@ h3 {
   .contain-404 h1 h2 {
     font-size: 2rem;
     padding-left: 1rem;
+  }
+}
+@media screen and (max-width: 995px) {
+  .données {
+    display: block;
+  }
+  .données .base-salaire {
+    width: 100%;
+  }
+  .données .tableau-base {
+    width: 90%;
+    margin: auto;
   }
 }
 

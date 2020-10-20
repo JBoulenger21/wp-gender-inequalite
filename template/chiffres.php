@@ -9,18 +9,17 @@ get_header();
 ?>
  
  <section class="chiffres container">
-    <h2>Les chiffres des inégalités</h2>
+     <!-- appel du custom post -->
+    <?php
+        query_posts( array(
+            'post_type' => 'chiffre_base',
+            'showposts' => 1
+        ) );
+    ?>
+        <?php while (have_posts()) : the_post(); ?>
+    <h2><?php the_title(); ?></h2>
 <!-- Présentation des chiffres bruts -->
     <div class="données">
-<!-- appel du custom post -->
-        <?php
-            query_posts( array(
-                'post_type' => 'chiffre_base',
-                'showposts' => 1
-            ) );
-        ?>
-        <?php while (have_posts()) : the_post(); ?>
-
         <div class="base-salaire">
             <?php the_content(); ?>          
             <a href="https://www.inegalites.fr/Les-inegalites-de-salaires-entre-les-femmes-et-les-hommes-etat-des-lieux?id_theme=22" target="_blank" rel="noopener" class="sources">(sources)</a>
