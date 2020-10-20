@@ -244,5 +244,32 @@ h3 {
     padding-left: 1rem;
   }
 }
+@media screen and (max-width: 993px) and (min-width: 770px) {
+  .encadre-introduction-home {
+    display: flex;
+  }
+  .encadre-introduction-home .img-intro-home {
+    width: 15rem;
+    padding-right: 2rem;
+    margin: 0;
+  }
+  .encadre-introduction-home .p-intro-home {
+    width: 60%;
+    margin-right: 2rem;
+    margin-left: auto;
+  }
+}
+@media (max-width: 680px) {
+  .header {
+    background-size: contain;
+    height: 100vh;
+  }
+  .header li {
+    display: block !important;
+  }
+  .header h1 {
+    text-align: center;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
