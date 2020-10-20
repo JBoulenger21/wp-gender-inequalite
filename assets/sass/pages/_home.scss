@@ -47,6 +47,7 @@
     }
     .presentation-home-image{
         text-align: center;
+        width: 30rem;
     }
 }
 
@@ -60,12 +61,6 @@
     }
     h3{
         text-align: center;
-        font-size: 1.5rem;
-        color: $greenDark;
-        margin: {
-            top: 5rem;
-            bottom: 3rem;
-        }
     }
     .p-home{
         padding: {

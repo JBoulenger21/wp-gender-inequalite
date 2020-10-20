@@ -26,8 +26,8 @@ register_nav_menu('navigation-hf',__('navigation-hf'));
 function themename_custom_header_setup() {
   $args = array(
       'default-image'      => get_template_directory_uri() . 'assets/images/banner.png',
-      'width'              => 1000,
-      'height'             => 250,
+      'width'              => 1577,
+      'height'             => 741,
       'flex-width'         => true,
       'flex-height'        => true,
   );

@@ -27,6 +27,13 @@ h2 {
   padding: 1rem;
 }
 
+h3 {
+  color: #629E81;
+  font-size: 1.5rem;
+  margin-top: 5rem;
+  margin-bottom: 3rem;
+}
+
 @font-face {
   font-family: "Poppins";
   src: url("../fonts/Poppins-Italic.ttf");
@@ -108,6 +115,7 @@ h2 {
 }
 .presentation-home .presentation-home-image {
   text-align: center;
+  width: 30rem;
 }
 
 .pages-home {
@@ -119,10 +127,6 @@ h2 {
 }
 .pages-home h3 {
   text-align: center;
-  font-size: 1.5rem;
-  color: #629E81;
-  margin-top: 5rem;
-  margin-bottom: 3rem;
 }
 .pages-home .p-home {
   padding-left: 3rem;
