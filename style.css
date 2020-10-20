@@ -34,6 +34,13 @@ h3 {
   margin-bottom: 3rem;
 }
 
+a {
+  color: #D29EEB;
+}
+a:hover {
+  color: #629E81;
+}
+
 @font-face {
   font-family: "Poppins";
   src: url("../fonts/Poppins-Italic.ttf");
@@ -219,18 +226,6 @@ h3 {
   flex-wrap: wrap;
   align-content: center;
 }
-@media screen and (max-width: 995px) {
-  .chiffres .données {
-    display: block;
-  }
-  .chiffres .données .base-salaire {
-    width: 100%;
-  }
-  .chiffres .données .tableau-base {
-    width: 90%;
-    margin: auto;
-  }
-}
 
 .cause {
   display: flex;
@@ -321,6 +316,18 @@ h3 {
 
   h1 {
     text-align: center;
+  }
+}
+@media screen and (max-width: 995px) {
+  .données {
+    display: block;
+  }
+  .données .base-salaire {
+    width: 100%;
+  }
+  .données .tableau-base {
+    width: 90%;
+    margin: auto;
   }
 }
 @media screen and (max-width: 993px) and (min-width: 770px) {
