@@ -259,6 +259,25 @@ h3 {
     margin-left: auto;
   }
 }
+@media screen and (max-width: 769px) {
+  .encadre-introduction-home {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .encadre-introduction-home .img-intro-home {
+    display: block;
+    width: 50%;
+    margin: 0 auto 0 auto;
+    padding-right: 2rem;
+  }
+  .encadre-introduction-home .p-intro-home {
+    width: 100%;
+    margin-right: 0;
+    margin-left: auto;
+    transform: none;
+    position: relative;
+  }
+}
 @media (max-width: 680px) {
   .header {
     background-size: contain;
