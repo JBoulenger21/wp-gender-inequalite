@@ -14,7 +14,7 @@
         <nav class="navigation">
           <div class="logo">
             <a href="<?php echo home_url( '/' ); ?>">
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.white.png" alt="icone logo">
+            <?php echo the_custom_logo()?>
             </a>
           </div>
           <div class="item-navigation">
@@ -38,3 +38,13 @@
       </div>
 
     </header>
+
+    <style>
+      .header{
+        background-image: url('<?php header_image() ?>');
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+        width: 100%;
+      }
+    </style>

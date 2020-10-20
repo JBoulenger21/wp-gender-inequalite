@@ -1,1 +1,29 @@
 @import "../utils/variables";
+
+.cause{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+.causeContent{
+  width: 20rem;
+}
+.causeDesktop{
+  display:block;
+}
+.causeResponsive{
+  display: none;
+}
+
+@media screen and (max-width:680px){
+  .causeDesktop{
+    display: none;
+  }
+  .causeResponsive{
+    display: block;
+    text-align: center;
+  }
+  h1{
+    text-align: center;
+  }
+}

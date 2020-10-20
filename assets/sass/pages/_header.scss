@@ -1,18 +1,14 @@
 @import "../utils/variables";
 
 .header{
-  background-image: url('assets/images/banner.png');
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 100vh;
-  width: 100%;
+ 
   h1{
     color: white;
     width: 50%;
     position: absolute;
     top: 50%;
   }
-  img{
+  .logo{
     width: 8rem;
   }
   .navigation{

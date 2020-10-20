@@ -14,3 +14,25 @@ body{
 h1{
   font-family: 'Sora';
 }
+h2{
+  margin: {
+      left: auto;
+      right: auto;
+      bottom: 3rem;
+      top: 8rem;
+  }
+  color: $greenLight;
+  text-align: center;
+  font-size: 2rem;
+  background-color: $purpleMedium;
+  width: 25rem;
+  padding: 1rem;
+}
+h3{
+  color: $greenDark;
+  font-size: 1.5rem;
+  margin: {
+    top: 5rem;
+    bottom: 3rem;
+  }
+}
