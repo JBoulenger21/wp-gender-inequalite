@@ -160,7 +160,9 @@ function cause_custom_post_types() {
   register_post_type( 'cause', $args );
 }
 
-
+add_filter( 'excerpt_length', function () {
+	return 90;
+}, 999 );
 add_action('after_setup_theme','montheme_supports');
 add_action('wp_enqueue_scripts', 'montheme_register_assets');
 add_filter('document_title_separator', 'montheme_title_separator');

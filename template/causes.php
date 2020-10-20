@@ -24,7 +24,7 @@ foreach ($cause as $post) {
 ?>
 <div class="row cause">
   <div class="col-lg-6 col-sm-12">
-      <?php the_post_thumbnail('thumbnail',[ 'alt' => '']) ?>
+      <?php the_post_thumbnail('medium',[ 'alt' => '']) ?>
   </div>
   <div class="col-lg-6 col-sm-12">
       <h3><?php the_title(); ?></h3>
@@ -67,7 +67,7 @@ while (have_posts()) : the_post();
         <div class="causeContent">
          <?php the_content(); ?>
         </div>
-        <?php the_post_thumbnail('medium',[ 'alt' => '']) ?>
+        <?php the_post_thumbnail('thumbnail',[ 'alt' => '']) ?>
     </div>
   </div>
 </div>
