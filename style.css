@@ -34,6 +34,13 @@ h3 {
   margin-bottom: 3rem;
 }
 
+a {
+  color: #D29EEB;
+}
+a:hover {
+  color: #629E81;
+}
+
 @font-face {
   font-family: "Poppins";
   src: url("../fonts/Poppins-Italic.ttf");
@@ -146,6 +153,80 @@ h3 {
   border-color: #895A9E;
 }
 
+.chiffres h2 {
+  text-align: center;
+}
+.chiffres .données {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.chiffres .données .base-salaire {
+  width: 45%;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+}
+.chiffres .données .tableau-base {
+  background-color: #D29EEB;
+  width: 45%;
+}
+.chiffres .données .tableau-base img {
+  width: 100%;
+  opacity: 0.9;
+}
+.chiffres .sources {
+  text-decoration: none;
+  margin: 0 0 0 auto;
+  font-size: smaller;
+  color: black;
+}
+.chiffres .sources:hover {
+  color: #86EBBA;
+}
+.chiffres .details h3 {
+  text-align: center;
+}
+.chiffres .details .articles-details div {
+  margin: 2% 0;
+}
+.chiffres .tab-left {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.chiffres .tab-left .img-tableau {
+  width: 45%;
+}
+.chiffres .tab-left .img-tableau img {
+  width: 100%;
+}
+.chiffres .tab-left .article {
+  width: 45%;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+}
+.chiffres .tab-right {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.chiffres .tab-right .img-tableau {
+  width: 45%;
+  background-color: #D29EEB;
+}
+.chiffres .tab-right .img-tableau img {
+  width: 100%;
+  opacity: 0.9;
+}
+.chiffres .tab-right .article {
+  width: 45%;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
 .cause {
   display: flex;
   flex-direction: row;
@@ -164,20 +245,6 @@ h3 {
   display: none;
 }
 
-@media screen and (max-width: 680px) {
-  .causeDesktop {
-    display: none;
-  }
-
-  .causeResponsive {
-    display: block;
-    text-align: center;
-  }
-
-  h1 {
-    text-align: center;
-  }
-}
 .footer {
   position: relative;
   margin-top: 5rem;
@@ -224,6 +291,7 @@ h3 {
   font-size: 1.5rem;
   background-color: transparent !important;
   padding-left: 1rem;
+  margin-top: 0;
   text-align: left;
 }
 
@@ -231,17 +299,35 @@ h3 {
   opacity: 0;
 }
 
-@media (max-width: 680px) {
-  .contain-404 {
-    height: 45vh;
+@media screen and (max-width: 680px) {
+  .cause {
+    display: flex;
+    flex-wrap: wrap;
   }
-  .contain-404 h1 {
-    font-size: 4rem;
-    padding-left: 1rem;
+
+  .causeDesktop {
+    display: none;
   }
-  .contain-404 h1 h2 {
-    font-size: 2rem;
-    padding-left: 1rem;
+
+  .causeResponsive {
+    display: block;
+    text-align: center;
+  }
+
+  h1 {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 995px) {
+  .données {
+    display: block;
+  }
+  .données .base-salaire {
+    width: 100%;
+  }
+  .données .tableau-base {
+    width: 90%;
+    margin: auto;
   }
 }
 @media screen and (max-width: 993px) and (min-width: 770px) {
@@ -414,6 +500,20 @@ h3 {
 @media screen and (max-width: 993px) and (max-width: 785px) {
   .overlay .closebtn {
     margin-top: 15%;
+  }
+}
+@media (max-width: 680px) {
+  .contain-404 {
+    height: 45vh;
+  }
+  .contain-404 h1 {
+    font-size: 4rem;
+    padding-left: 1rem;
+  }
+  .contain-404 h1 h2 {
+    font-size: 2rem;
+    padding-left: 1rem;
+    margin-top: 0;
   }
 }
 

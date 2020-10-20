@@ -1,26 +1,29 @@
 <?php
 /*
-Template Name: Causes
+Template Name: Conséquences
 */
-
 get_header();
 ?>
 <div class="container">
-<h1>Causes</h1>
+<h1>Conséquences</h1>
 
 <?php
-  $cause = get_posts(array(
-  'post_type' => 'cause',
-  'showposts' => 3,
-  ) );
+$consequence = get_posts(array(
+'post_type' => 'consequence',
+'showposts' => 3,
+'numberposts' => 3,
+'order' => 'ASC'
+) );
 $i = 0;
- while (have_posts()) : the_post();
+while (have_posts()) : the_post();
  ?>
 <div class="causeDesktop">
  <?php
-foreach ($cause as $post) {
+
+foreach ($consequence as $post) {
+
   $i++;
-  if ($i % 2 == 0){
+  if ($i % 2 != 0){
 ?>
 <div class="row cause">
   <div class="col-lg-6 col-sm-12">
@@ -52,10 +55,15 @@ foreach ($cause as $post) {
 }
 }
 endwhile;
+?>
+</div>
 
+<?php
 query_posts(array(
-'post_type' => 'cause',
+'post_type' => 'consequence',
 'showposts' => 3,
+'numberposts' => 3,
+'order' => 'ASC'
 ) );
 while (have_posts()) : the_post();
  ?>
@@ -71,8 +79,6 @@ while (have_posts()) : the_post();
     </div>
   </div>
 </div>
-
-
 <?php endwhile; ?>
 </div>
 <?php get_footer();?>

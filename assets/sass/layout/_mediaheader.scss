@@ -118,3 +118,23 @@
         }
     }
 }
+@media (max-width:680px){
+  .contain-404{
+    height: 45vh;
+    h1{
+      font-size: 4rem;
+      padding:{
+        left: 1rem;
+      }
+      h2{
+        font-size: 2rem;
+        padding:{
+          left:1rem;
+        }
+        margin:{
+          top: 0;
+        }
+      }
+    }
+  }
+}

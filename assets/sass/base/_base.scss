@@ -36,3 +36,9 @@ h3{
     bottom: 3rem;
   }
 }
+a{
+  color: $purpleLight;
+  &:hover{
+    color: $greenDark;
+  }
+}
