@@ -53,7 +53,6 @@ get_header();
                 <div class="article">
                     <h4><?php the_title(); ?></h4>
                     <?php the_content(); ?>
-                    <a href="https://www.inegalites.fr/Les-inegalites-de-salaires-entre-les-femmes-et-les-hommes-etat-des-lieux?id_theme=22" target="_blank" rel="noopener" class="sources">(sources)</a>
                 </div>
             <?php endwhile; ?>
             </div>
