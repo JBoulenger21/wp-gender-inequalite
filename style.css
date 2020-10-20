@@ -34,6 +34,13 @@ h3 {
   margin-bottom: 3rem;
 }
 
+a {
+  color: #D29EEB;
+}
+a:hover {
+  color: #629E81;
+}
+
 @font-face {
   font-family: "Poppins";
   src: url("../fonts/Poppins-Italic.ttf");
