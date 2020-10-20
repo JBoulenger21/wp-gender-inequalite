@@ -141,12 +141,12 @@ function sections_custom_post_type() {
 function cause_custom_post_types() {
   // CPT causes conséquences
   $labels = array(
-      'name' => 'Cause Consequence',
-      'all_items' => 'Causes Consequences',  // affiché dans le sous menu
+      'name' => 'Cause',
+      'all_items' => 'Causes',  // affiché dans le sous menu
       'singular_name' => 'Cause',
       'add_new_item' => 'Ajouter une cause consequence',
       'edit_item' => 'Modifier la cause consequence',
-      'menu_name' => 'Cause Consequence'
+      'menu_name' => 'Cause'
   );
   $args = array(
       'labels' => $labels,
@@ -160,6 +160,28 @@ function cause_custom_post_types() {
   register_post_type( 'cause', $args );
 }
 
+function consequence_custom_post_types() {
+  // CPT causes conséquences
+  $labels = array(
+      'name' => 'Consequence',
+      'all_items' => 'Consequences',  // affiché dans le sous menu
+      'singular_name' => 'Consequence',
+      'add_new_item' => 'Ajouter une cause consequence',
+      'edit_item' => 'Modifier la cause consequence',
+      'menu_name' => 'Consequence'
+  );
+  $args = array(
+      'labels' => $labels,
+      'public' => true,
+      'show_in_rest' => true,
+      'has_archive' => true,
+      'supports' => array( 'title', 'editor','thumbnail' ),
+      'menu_position' => 5,
+      'menu_icon' => 'dashicons-admin-customizer',
+  );
+  register_post_type( 'consequence', $args );
+}
+
 add_filter( 'excerpt_length', function () {
 	return 90;
 }, 999 );
@@ -169,6 +191,7 @@ add_filter('document_title_separator', 'montheme_title_separator');
 add_action( 'init', 'register_my_menu' );
 add_action( 'init', 'sections_custom_post_type' );
 add_action( 'init', 'cause_custom_post_types' );
+add_action( 'init', 'consequence_custom_post_types' );
 add_action( 'init', 'presentation_custom_post_type' );
 add_action( 'init', 'introduction_custom_post_type' );
 add_action( 'after_setup_theme', 'themename_custom_logo_setup' );
