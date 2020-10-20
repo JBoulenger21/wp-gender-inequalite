@@ -36,15 +36,16 @@
     </div>
 
     <div class="pages-home">
-        <h2>Pages</h2>
+        <?php 
+            query_posts(array(
+            'post_type' => 'sections',
+            'showposts' => 4
+            ) );
+        ?>
+        <h2><?php post_type_archive_title(); ?></h2>
         <div class="row">
 
-        <?php 
-        query_posts(array(
-        'post_type' => 'sections',
-        'showposts' => 4
-        ) );
-        ?>
+        
             <?php while (have_posts()) : the_post(); ?>
 
             <div class="col-lg-6 text-center">
