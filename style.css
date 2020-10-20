@@ -250,20 +250,6 @@ h3 {
   display: none;
 }
 
-@media screen and (max-width: 680px) {
-  .causeDesktop {
-    display: none;
-  }
-
-  .causeResponsive {
-    display: block;
-    text-align: center;
-  }
-
-  h1 {
-    text-align: center;
-  }
-}
 .footer {
   position: relative;
   margin-top: 5rem;
@@ -310,6 +296,7 @@ h3 {
   font-size: 1.5rem;
   background-color: transparent !important;
   padding-left: 1rem;
+  margin-top: 0;
   text-align: left;
 }
 
@@ -317,6 +304,52 @@ h3 {
   opacity: 0;
 }
 
+@media screen and (max-width: 680px) {
+  .cause {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .causeDesktop {
+    display: none;
+  }
+
+  .causeResponsive {
+    display: block;
+    text-align: center;
+  }
+
+  h1 {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 993px) and (min-width: 770px) {
+  .encadre-introduction-home {
+    display: flex;
+  }
+  .encadre-introduction-home .img-intro-home {
+    width: 15rem;
+    padding-right: 2rem;
+    margin: 0;
+  }
+  .encadre-introduction-home .p-intro-home {
+    width: 60%;
+    margin-right: 2rem;
+    margin-left: auto;
+  }
+}
+@media (max-width: 680px) {
+  .header {
+    background-size: contain;
+    height: 100vh;
+  }
+  .header li {
+    display: block !important;
+  }
+  .header h1 {
+    text-align: center;
+  }
+}
 @media (max-width: 680px) {
   .contain-404 {
     height: 45vh;
@@ -328,6 +361,7 @@ h3 {
   .contain-404 h1 h2 {
     font-size: 2rem;
     padding-left: 1rem;
+    margin-top: 0;
   }
 }
 
