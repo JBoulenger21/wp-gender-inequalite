@@ -55,7 +55,7 @@
                 <button type="button" class="btn btn-lg btn-primary">Voir</button>
             </div>
 
-        <?php endwhile; ?>
+            <?php endwhile; ?>
 
         </div>
     </div>
