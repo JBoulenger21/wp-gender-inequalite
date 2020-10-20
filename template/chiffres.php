@@ -4,7 +4,7 @@ Template Name: chiffres
 */
 
 get_header();
-    if (have_posts()): while (have_posts()) : the_post();
+   
 
 ?>
  
@@ -12,13 +12,25 @@ get_header();
     <h2>Les chiffres des inégalités</h2>
 <!-- Présentation des chiffres bruts -->
     <div class="données">
+<!-- appel du custom post -->
+        <?php
+            query_posts( array(
+                'post_type' => 'chiffre_base',
+                'showposts' => 1
+            ) );
+        ?>
+        <?php while (have_posts()) : the_post(); ?>
+
         <div class="base-salaire">
-            <p>En "ETP" [1], les femmes touchent 18,5 % de moins que les hommes, selon l’Insee. La discrimination pure serait d’environ 10 % d’après le ministère du Travail. Le salaire mensuel net moyen des hommes, ETP  est de 2 438 € en 2015, celui des femmes de 1 986 €, soit un écart de 452 €. Les femmes perçoivent donc, en moyenne, 81,5 % du salaire des hommes. Soit un salire inférieur de 18,5%. Ou encore les  hommes touchent 22,8% de plus.</p>
+            <?php the_content(); ?>
+            <!-- <p>En "ETP" [1], les femmes touchent 18,5 % de moins que les hommes, selon l’Insee. La discrimination pure serait d’environ 10 % d’après le ministère du Travail. Le salaire mensuel net moyen des hommes, ETP  est de 2 438 € en 2015, celui des femmes de 1 986 €, soit un écart de 452 €. Les femmes perçoivent donc, en moyenne, 81,5 % du salaire des hommes. Soit un salire inférieur de 18,5%. Ou encore les  hommes touchent 22,8% de plus.</p> -->
             <a href="https://www.inegalites.fr/Les-inegalites-de-salaires-entre-les-femmes-et-les-hommes-etat-des-lieux?id_theme=22" target="_blank" rel="noopener" class="sources">(sources)</a>
         </div>
         <div class="tableau-base">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/salaire-net-moyen-selon.jpeg" alt="Tableau representant le salaire net moyen (source : INSEE)">
+        <?php the_post_thumbnail('post-thumbnail', ['class' => 'tableau-base img-fluid', 'alt' => '']); ?>
+            <!-- <img src="<?php echo get_template_directory_uri(); ?>/assets/images/salaire-net-moyen-selon.jpeg" alt="Tableau representant le salaire net moyen (source : INSEE)"> -->
         </div>
+            <?php endwhile; ?>
     </div>
 <!-- Les données en détails -->
     <div class="details">
@@ -57,5 +69,5 @@ get_header();
         </div>
     </div>
 </section>
-<?php endwhile; endif;
-get_footer();?>
+
+<?php get_footer();?>
