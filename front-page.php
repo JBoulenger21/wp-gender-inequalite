@@ -41,7 +41,8 @@
         <?php 
             query_posts(array(
             'post_type' => 'sections',
-            'showposts' => 4
+            'showposts' => 4,
+            'order' => 'ASC'
             ) );
         ?>
         <h2><?php post_type_archive_title(); ?></h2>

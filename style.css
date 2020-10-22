@@ -269,6 +269,9 @@ a:hover {
   transform: translateY(-50%);
   opacity: 0.6;
 }
+.footer .logo-footer:hover {
+  opacity: 1;
+}
 
 .background404 {
   height: 100%;
@@ -532,6 +535,11 @@ a:hover {
     font-size: 2rem;
     padding-left: 1rem;
     margin-top: 0;
+  }
+}
+@media screen and (max-width: 993px) {
+  .logo-footer {
+    display: none;
   }
 }
 
