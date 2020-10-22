@@ -212,7 +212,7 @@ function consequence_custom_post_types() {
   register_post_type( 'consequence', $args );
 }
 
-function detail_custom_post_type() {
+function detail_custom_post_types() {
 	$labels = array(
 		'name'                => 'Plus de détails',
 		'singular_name'       => 'chiffres détaillés',
@@ -256,6 +256,6 @@ add_action( 'init', 'consequence_custom_post_types' );
 add_action( 'init', 'presentation_custom_post_type' );
 add_action( 'init', 'introduction_custom_post_type' );
 add_action( 'init', 'chiffre_custom_post_type' );
-add_action( 'init', 'detail_custom_post_type' );
+add_action( 'init', 'detail_custom_post_types' );
 add_action( 'after_setup_theme', 'themename_custom_logo_setup' );
 add_action( 'after_setup_theme', 'themename_custom_header_setup' );

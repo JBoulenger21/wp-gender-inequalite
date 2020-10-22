@@ -41,42 +41,43 @@
             div{
                 margin: 2% 0;
             }
-        }
-    }
-    .tab-left{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        .img-tableau{
-            width: 45%;
-            img{
-                width: 100%;
+            .tab-left{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                .img-tableau{
+                    width: 45%;
+                    img{
+                        width: 100%;
+                    }
+                }
+                .article{
+                    width: 45%;
+                    display: flex;
+                    flex-wrap: wrap;
+                    align-content: center;                  
+                }
+            }
+            .tab-right{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                .img-tableau{
+                    width: 45%;
+                    background-color: $purpleLight;
+                    img{
+                        width: 100%;
+                        opacity: 0.9;
+                    }
+                }
+                .article{
+                    width: 45%;
+                    display: flex;
+                    flex-wrap: wrap;
+                    align-content: center;
+                }
             }
         }
-        .article{
-            width: 45%;
-            display: flex;
-            flex-wrap: wrap;
-            align-content: center;
-        }
     }
-    .tab-right{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        .img-tableau{
-            width: 45%;
-            background-color: $purpleLight;
-            img{
-                width: 100%;
-                opacity: 0.9;
-            }
-        }
-        .article{
-            width: 45%;
-            display: flex;
-            flex-wrap: wrap;
-            align-content: center;
-        }
-    }
+    
 }

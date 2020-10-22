@@ -12,7 +12,8 @@ get_header();
     <?php
         query_posts( array(
             'post_type' => 'chiffre',
-            'showposts' => 1
+            'showposts' => 1,
+            'numberposts' => 1,
         ) );
     ?>
     <?php while (have_posts()) : the_post(); ?>
@@ -33,31 +34,55 @@ get_header();
 
 <!-- Les données en détails -->
     <div class="details">
-        <?php
-            query_posts( array(
-                'post_type' => 'detail',
-                'showposts' => 5,
-                'order' => 'ASC'
-            ) );
-        ?>
-
         <h3><?php post_type_archive_title(); ?></h3>
-
-        <?php while (have_posts()) : the_post(); ?>
-
         <div class="articles-details">
-            <div class="cat tab-left">
+            <?php
+                $detail = get_posts( array(
+                    'post_type' => 'detail',
+                    'showposts' => 5,
+                    'numberposts' => 5,
+                    'order' => 'ASC'
+                ) );
+                $i= 0;
+                while (have_posts()) : the_post(); 
+            ?>           
+            <?php foreach ($detail as $post){
+                $i++;
+                if ($i % 2 !==0 ){       
+            ?>
+            <div class="tab-left">
                 <div class="img-tableau">
-                <?php the_post_thumbnail('post-thumbnail', ['class' => 'img-fluid', 'alt' => '']); ?>
+                    <?php the_post_thumbnail('post-thumbnail', ['class' => 'img-fluid', 'alt' => '']); ?>
                 </div>
                 <div class="article">
                     <h4><?php the_title(); ?></h4>
-                    <?php the_content(); ?>
-                </div>
-            <?php endwhile; ?>
+                    <?php the_excerpt(); ?>
+                </div>           
             </div>
+            
+            <?php
+                }else{                
+            ?>
+            <div class="tab-right">
+            <div class="article">
+                    <h4><?php the_title(); ?></h4>
+                    <?php the_excerpt(  ); ?>
+                </div>           
+                <div class="img-tableau">
+                    <?php the_post_thumbnail('post-thumbnail', ['class' => 'img-fluid', 'alt' => '']); ?>
+                </div>
+                
+            </div>
+            
+            <?php       
+            }
+        }
+        endwhile;?>
         </div>
+       
     </div>
+    
 </section>
 
 <?php get_footer(); ?>
+

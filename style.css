@@ -191,37 +191,37 @@ a:hover {
 .chiffres .details .articles-details div {
   margin: 2% 0;
 }
-.chiffres .tab-left {
+.chiffres .details .articles-details .tab-left {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
-.chiffres .tab-left .img-tableau {
+.chiffres .details .articles-details .tab-left .img-tableau {
   width: 45%;
 }
-.chiffres .tab-left .img-tableau img {
+.chiffres .details .articles-details .tab-left .img-tableau img {
   width: 100%;
 }
-.chiffres .tab-left .article {
+.chiffres .details .articles-details .tab-left .article {
   width: 45%;
   display: flex;
   flex-wrap: wrap;
   align-content: center;
 }
-.chiffres .tab-right {
+.chiffres .details .articles-details .tab-right {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
-.chiffres .tab-right .img-tableau {
+.chiffres .details .articles-details .tab-right .img-tableau {
   width: 45%;
   background-color: #D29EEB;
 }
-.chiffres .tab-right .img-tableau img {
+.chiffres .details .articles-details .tab-right .img-tableau img {
   width: 100%;
   opacity: 0.9;
 }
-.chiffres .tab-right .article {
+.chiffres .details .articles-details .tab-right .article {
   width: 45%;
   display: flex;
   flex-wrap: wrap;
