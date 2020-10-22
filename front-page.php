@@ -2,7 +2,6 @@
 
 <div class="container front-page">
 
-    <div class="encadre-introduction-home">
         <?php
             query_posts(array(
             'post_type' => 'introduction',
@@ -10,6 +9,9 @@
             ) );
         ?>
         <?php while (have_posts()) : the_post(); ?>
+        
+    <div class="encadre-introduction-home">
+        
 
         <?php the_post_thumbnail('post-thumbnail', ['class' => 'img-intro-home img-fluid', 'alt' => '']); ?>
         <div class="py-auto p-intro-home"><?php the_content(); ?></div>
