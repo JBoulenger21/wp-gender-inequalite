@@ -252,10 +252,22 @@ a:hover {
   background-color: #531E6A;
   height: 40vh;
 }
+.footer .footer-navigation {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+  text-decoration: none;
+}
+.footer .footer-navigation li {
+  list-style: none;
+  padding: 0.5rem;
+}
 .footer .logo-footer {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
+  opacity: 0.6;
 }
 
 .background404 {
