@@ -244,7 +244,7 @@ function detail_custom_post_types() {
 }
 
 add_filter( 'excerpt_length', function () {
-	return 90;
+	return 100;
 }, 999 );
 add_action('after_setup_theme','montheme_supports');
 add_action('wp_enqueue_scripts', 'montheme_register_assets');
