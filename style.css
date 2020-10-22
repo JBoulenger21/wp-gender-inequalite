@@ -65,6 +65,7 @@ a:hover {
 }
 .header .logo {
   width: 8rem;
+  position: absolute;
 }
 .header .navigation {
   padding-top: 2rem;
@@ -386,6 +387,10 @@ a:hover {
   }
 }
 @media screen and (max-width: 993px) {
+  .header .logo {
+    position: absolute;
+  }
+
   .open-menu {
     display: block;
   }
@@ -397,7 +402,8 @@ a:hover {
   /* Burger menu */
   .open-menu {
     position: absolute;
-    margin: 2%;
+    right: 0;
+    margin: 2rem;
   }
 
   /* Bouton d'ouverture et fermeture du menu*/
@@ -464,7 +470,7 @@ a:hover {
     padding: 0 0 3% 0;
     text-decoration: none;
     font-size: 45px;
-    color: #818181;
+    color: #895A9E;
     display: block;
     /* Display block instead of inline */
     transition: 0.3s;
@@ -473,7 +479,7 @@ a:hover {
 
   /* When you mouse over the navigation links, change their color */
   .overlay a:hover, .overlay a:focus {
-    color: #f1f1f1;
+    color: #86EBBA;
   }
 
   /* Position the close button (top right corner) */

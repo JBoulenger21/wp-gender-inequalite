@@ -31,10 +31,12 @@
               </a>
         <!-- Overlay content -->
               <div class="overlay-content">
-                <a href="#">Accueil</a>
-                <a href="#">Chiffres</a>
-                <a href="#">Législation</a>
-                <a href="#">Infographies</a>
+                <a>
+                  <?php wp_nav_menu( array (
+                    'theme_location' => 'navigation-hf',
+                    'menu_class' => 'menu_navigation',
+                  ) ); ?> 
+                </a>
               </div>
             </div>
           </div>

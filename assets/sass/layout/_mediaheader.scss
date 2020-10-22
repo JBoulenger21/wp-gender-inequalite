@@ -1,37 +1,43 @@
 @import "../utils/variables";
 
 @media (max-width: 680px){
-    .header{
-        background-size: contain;
-        height: 100vh;
-        li{
-            display: block!important;
-        }
-        h1{
-            text-align: center;
-        }
+  .header{
+    background-size: contain;
+    height: 100vh;
+    li{
+        display: block!important;
     }
+    h1{
+        text-align: center;
+    }
+  }
 }
 
 @media screen and (min-width: 993px){
-    .open-menu{
-        display: none;
-    }
-    .overlay-content{
-        display: none;
-    }
+  .open-menu{
+      display: none;
+  }
+  .overlay-content{
+      display: none;
+  }
 }
 @media screen and (max-width: 993px){
-    .open-menu{
-        display: block;
+  .header{
+    .logo{
+      position: absolute;
     }
-    .item-navigation{
-        display: none;
-    }
-    /* Burger menu */
+  }
+  .open-menu{
+      display: block;
+  }
+  .item-navigation{
+      display: none;
+  }
+  /* Burger menu */
 .open-menu{
     position: absolute;
-    margin: 2%;
+    right: 0;
+    margin: 2rem;
   }
   /* Bouton d'ouverture et fermeture du menu*/
   .bar1, .bar2, .bar3 {
@@ -85,14 +91,14 @@
       padding: 0 0 3% 0;
       text-decoration: none;
       font-size: 45px;
-      color: #818181;
+      color: $purpleMedium;
       display: block; /* Display block instead of inline */
       transition: 0.3s; /* Transition effects on hover (color) */
     }
   
     /* When you mouse over the navigation links, change their color */
     .overlay a:hover, .overlay a:focus {
-      color: #f1f1f1;
+      color: $greenLight;
     }
   
     /* Position the close button (top right corner) */
