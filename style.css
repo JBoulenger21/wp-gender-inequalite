@@ -263,6 +263,9 @@ a:hover {
   list-style: none;
   padding: 0.5rem;
 }
+.footer .footer-navigation a {
+  text-decoration: none;
+}
 .footer .logo-footer {
   position: absolute;
   top: 50%;
