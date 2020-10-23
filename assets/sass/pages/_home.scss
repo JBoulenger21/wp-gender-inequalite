@@ -1,23 +1,15 @@
 @import "../utils/variables";
 
-.front-page{
-    
-}
 
 .encadre-introduction-home{
     position: relative;
-    border: 2px solid $purpleDark;
+    border: 2px solid $greenLight;
     margin: {
         top: 8rem;
         bottom: 8rem;
     }
     display: flex;
-    padding: {
-        top: 2rem;
-        bottom: 2rem;
-        left: 2rem;
-        right: 2rem;
-    }
+    padding: 2.5rem;
     .img-intro-home{
         width: 15rem;
         padding-right: 2rem;
@@ -28,6 +20,9 @@
         top: 50%;
         transform: translateY(-50%);
         right: 0;
+        p{
+            padding-right: 1.5rem;
+        }
     }
 }
 
@@ -50,11 +45,22 @@
         width: 30rem;
     }
 }
-
+.bg-section-pagehome{
+    background-color: white;
+    padding-top: 1rem;
+}
 .pages-home{
+
+    p{
+        color: black;
+        font-weight: 300;
+        padding: 1.2rem;
+    }
     margin: {
         top: 8rem;
-        bottom: 8rem;
+    }
+    .hauteur{
+        height: 171px;
     }
     .img-page-home{
         width: 10rem;
@@ -63,14 +69,10 @@
         text-align: center;
     }
     .p-home{
-        padding: {
-            left: 3rem;
-            right: 3rem;
-        }
-        margin: {
-            top: 2rem;
-            bottom: 2rem;
-        }    
+        // padding: {
+        //     left: 3rem;
+        //     right: 3rem;
+        // }
     }
     button{
         background-color: $purpleLight;
