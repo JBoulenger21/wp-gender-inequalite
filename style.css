@@ -214,7 +214,6 @@ p {
 
 .footer {
   position: relative;
-  margin-top: 5rem;
   background-color: #531E6A;
   height: 40vh;
 }
@@ -282,6 +281,20 @@ p {
 
 .bidouille {
   opacity: 0;
+}
+
+.infographie {
+  background-color: rgba(211, 158, 235, 0.6);
+  height: auto;
+}
+.infographie img {
+  width: 30%;
+  border: 3px solid white;
+  padding: 3rem;
+}
+.infographie .contenu {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
 }
 
 @media screen and (max-width: 680px) {
