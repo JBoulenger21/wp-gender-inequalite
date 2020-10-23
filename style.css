@@ -28,6 +28,9 @@ h2 {
   padding: 1rem;
   border-radius: 7px;
 }
+h2:hover {
+  color: #531E6A;
+}
 
 h3 {
   color: #629E81;
