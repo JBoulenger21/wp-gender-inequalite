@@ -1,26 +1,30 @@
 @import "../utils/variables";
 
 // Style de la page "Les chiffres des inégalitées"
-.chiffres{
-    h2{
-        text-align: center;
+.chiffres{  
+    .container{
+        
+        .données{
+            margin-top: 5%;
+            .articles{
+                width: 70%;
+                margin: 0 auto 0 auto;
+                p{
+                    font-size: 1.2rem;
+                    color: white;
+                    font-weight: lighter;
+                }
+            }
+        }      
     }
-    .données{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        .base-salaire{
-            width: 45%;
+    
+        .tableau{
             display: flex;
-            flex-wrap: wrap;
-            align-content: center;
-        }
-        .tableau-base{
-            background-color: $purpleLight;
-            width: 45%;
+            justify-content: center;
+            margin-top: 5%;
+            background-color: white;
             img{
-                width: 100%;
-                opacity: 0.9;
+                width: 60%;           
             }
         }
     }
@@ -33,51 +37,4 @@
             color: $greenLight;
         }
     }
-    .details{
-        h3{
-            text-align: center;
-        }
-        .articles-details{
-            div{
-                margin: 2% 0;
-            }
-            .tab-left{
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: space-between;
-                .img-tableau{
-                    width: 45%;
-                    img{
-                        width: 100%;
-                    }
-                }
-                .article{
-                    width: 45%;
-                    display: flex;
-                    flex-wrap: wrap;
-                    align-content: center;                  
-                }
-            }
-            .tab-right{
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: space-between;
-                .img-tableau{
-                    width: 45%;
-                    background-color: $purpleLight;
-                    img{
-                        width: 100%;
-                        opacity: 0.9;
-                    }
-                }
-                .article{
-                    width: 45%;
-                    display: flex;
-                    flex-wrap: wrap;
-                    align-content: center;
-                }
-            }
-        }
-    }
-    
-}
+   

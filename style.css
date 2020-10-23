@@ -8,6 +8,7 @@ Version: 1.0
 */
 body {
   font-family: "Poppins";
+  background-color: #531E6A;
 }
 
 h1 {
@@ -25,6 +26,7 @@ h2 {
   background-color: #895A9E;
   width: 25rem;
   padding: 1rem;
+  border-radius: 7px;
 }
 
 h3 {
@@ -39,6 +41,11 @@ a {
 }
 a:hover {
   color: #629E81;
+}
+
+p {
+  color: white;
+  font-weight: lighter;
 }
 
 @font-face {
@@ -154,78 +161,36 @@ a:hover {
   border-color: #895A9E;
 }
 
-.chiffres h2 {
-  text-align: center;
+.chiffres .container .données {
+  margin-top: 5%;
 }
-.chiffres .données {
+.chiffres .container .données .articles {
+  width: 70%;
+  margin: 0 auto 0 auto;
+}
+.chiffres .container .données .articles p {
+  font-size: 1.2rem;
+  color: white;
+  font-weight: lighter;
+}
+.chiffres .tableau {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
+  margin-top: 5%;
+  background-color: white;
 }
-.chiffres .données .base-salaire {
-  width: 45%;
-  display: flex;
-  flex-wrap: wrap;
-  align-content: center;
+.chiffres .tableau img {
+  width: 60%;
 }
-.chiffres .données .tableau-base {
-  background-color: #D29EEB;
-  width: 45%;
-}
-.chiffres .données .tableau-base img {
-  width: 100%;
-  opacity: 0.9;
-}
-.chiffres .sources {
+
+.sources {
   text-decoration: none;
   margin: 0 0 0 auto;
   font-size: smaller;
   color: black;
 }
-.chiffres .sources:hover {
+.sources:hover {
   color: #86EBBA;
-}
-.chiffres .details h3 {
-  text-align: center;
-}
-.chiffres .details .articles-details div {
-  margin: 2% 0;
-}
-.chiffres .details .articles-details .tab-left {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-.chiffres .details .articles-details .tab-left .img-tableau {
-  width: 45%;
-}
-.chiffres .details .articles-details .tab-left .img-tableau img {
-  width: 100%;
-}
-.chiffres .details .articles-details .tab-left .article {
-  width: 45%;
-  display: flex;
-  flex-wrap: wrap;
-  align-content: center;
-}
-.chiffres .details .articles-details .tab-right {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-.chiffres .details .articles-details .tab-right .img-tableau {
-  width: 45%;
-  background-color: #D29EEB;
-}
-.chiffres .details .articles-details .tab-right .img-tableau img {
-  width: 100%;
-  opacity: 0.9;
-}
-.chiffres .details .articles-details .tab-right .article {
-  width: 45%;
-  display: flex;
-  flex-wrap: wrap;
-  align-content: center;
 }
 
 .cause {
