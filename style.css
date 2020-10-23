@@ -28,6 +28,9 @@ h2 {
   padding: 1rem;
   border-radius: 7px;
 }
+h2:hover {
+  color: #531E6A;
+}
 
 h3 {
   color: #629E81;
@@ -96,14 +99,11 @@ p {
 
 .encadre-introduction-home {
   position: relative;
-  border: 2px solid #531E6A;
+  border: 2px solid #86EBBA;
   margin-top: 8rem;
   margin-bottom: 8rem;
   display: flex;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-  padding-left: 2rem;
-  padding-right: 2rem;
+  padding: 2.5rem;
 }
 .encadre-introduction-home .img-intro-home {
   width: 15rem;
@@ -115,6 +115,9 @@ p {
   top: 50%;
   transform: translateY(-50%);
   right: 0;
+}
+.encadre-introduction-home .p-intro-home p {
+  padding-right: 1.5rem;
 }
 
 .presentation-home {
@@ -133,21 +136,27 @@ p {
   width: 30rem;
 }
 
+.bg-section-pagehome {
+  background-color: white;
+  padding-top: 1rem;
+}
+
 .pages-home {
   margin-top: 8rem;
-  margin-bottom: 8rem;
+}
+.pages-home p {
+  color: black;
+  font-weight: 300;
+  padding: 1.2rem;
+}
+.pages-home .hauteur {
+  height: 171px;
 }
 .pages-home .img-page-home {
   width: 10rem;
 }
 .pages-home h3 {
   text-align: center;
-}
-.pages-home .p-home {
-  padding-left: 3rem;
-  padding-right: 3rem;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
 }
 .pages-home button {
   background-color: #D29EEB;

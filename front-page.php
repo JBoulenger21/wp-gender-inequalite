@@ -31,13 +31,17 @@
         <h2><?php the_title(); ?></h2>
 
         <div class="p-presentation-home"><?php the_content(); ?></div>
+
         <div class="presentation-home-image mx-auto">
         <?php the_post_thumbnail('post-thumbnail', ['class' => 'presentation-home-image img-fluid', 'alt' => 'illustration presentation']); ?>
         </div>
+
         <?php endwhile; ?>
     </div>
+</div>
 
-    <div class="pages-home">
+<div class="container-fluid bg-section-pagehome">
+    <div class="container pages-home">
         <?php 
             query_posts(array(
             'post_type' => 'sections',
@@ -51,11 +55,11 @@
         
             <?php while (have_posts()) : the_post(); ?>
 
-            <div class="col-lg-6 text-center">
+            <div class="col-lg-6 text-center h-100">
                 <h3><?php the_title(); ?></h3>
-                <?php the_post_thumbnail('post-thumbnail', ['class' => 'img-page-home img-fluid', 'alt' => 'icone section']); ?>
+                <div class="hauteur"><?php the_post_thumbnail('post-thumbnail', ['class' => 'img-page-home img-fluid', 'alt' => 'icone section']); ?></div>
                 <div class="p-home"><?php the_content(); ?></div>
-                <button type="button" class="btn btn-lg btn-primary">Voir</button>
+                <!-- <button type="button" class="btn btn-lg btn-primary">Voir</button> -->
             </div>
 
             <?php endwhile; ?>
@@ -64,5 +68,6 @@
     </div>
 
 </div>
+
 
 <?php get_footer(); ?>
