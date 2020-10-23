@@ -8,7 +8,7 @@ get_header();
 ?>
  
  <section class="chiffres">
-    <div class="container">
+    
         <!-- appel du custom post -->
         <?php
             query_posts( array(
@@ -19,7 +19,7 @@ get_header();
             ) );
         ?>
         <?php while (have_posts()) : the_post(); ?>
-
+        <div class="container">
         <h2><?php the_title(); ?></h2>
 
     <!-- Présentation des chiffres bruts -->

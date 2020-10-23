@@ -166,7 +166,7 @@ p {
 }
 .chiffres .container .données .articles {
   width: 70%;
-  margin: 0 auto 0 auto;
+  margin: 5rem auto 5rem auto;
 }
 .chiffres .container .données .articles p {
   font-size: 1.2rem;
@@ -177,10 +177,11 @@ p {
   display: flex;
   justify-content: center;
   margin-top: 5%;
-  background-color: white;
+  padding: 2%;
 }
 .chiffres .tableau img {
-  width: 60%;
+  width: 46rem;
+  opacity: 0.9;
 }
 
 .sources {
@@ -300,18 +301,6 @@ p {
 
   h1 {
     text-align: center;
-  }
-}
-@media screen and (max-width: 995px) {
-  .données {
-    display: block;
-  }
-  .données .base-salaire {
-    width: 100%;
-  }
-  .données .tableau-base {
-    width: 90%;
-    margin: auto;
   }
 }
 @media screen and (max-width: 993px) and (min-width: 770px) {
