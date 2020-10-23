@@ -10,6 +10,7 @@ Version: 1.0
 
 body{
   font-family: 'Poppins';
+  background-color: $purpleDark;
 }
 h1{
   font-family: 'Sora';
@@ -27,6 +28,7 @@ h2{
   background-color: $purpleMedium;
   width: 25rem;
   padding: 1rem;
+  border-radius: 7px;
 }
 h3{
   color: $greenDark;
@@ -41,4 +43,8 @@ a{
   &:hover{
     color: $greenDark;
   }
+}
+p{
+  color: white;
+  font-weight: lighter;
 }
