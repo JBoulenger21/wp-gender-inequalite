@@ -211,6 +211,37 @@ function consequence_custom_post_types() {
   );
   register_post_type( 'consequence', $args );
 }
+function legislation_custom_post_type() {
+	$labels = array(
+		'name'                => 'legislation',
+		'singular_name'       => 'presentation',
+		'menu_name'           => 'presentation',
+		'all_items'           => 'Toutes les presentations',
+		'view_item'           => 'Voir les presentations',
+		'add_new_item'        => 'Ajouter une nouvelle presentation',
+		'add_new'             => 'Ajouter',
+		'edit_item'           => 'Editer la presentation',
+		'update_item'         => 'Modifier la presentation',
+		'search_items'        => 'Rechercher une presentation',
+		'not_found'           => 'Non trouvée',
+		'not_found_in_trash'  => 'Non trouvée dans la corbeille',
+	);
+	$args = array(
+		'label'               => 'presentation',
+		'description'         => 'Tous sur les évènements',
+		'labels'              => $labels,
+    'menu_icon'           => 'dashicons-edit-large',
+    'menu_position'       => 5,
+		'supports'            => array( 'title', 'editor', 'excerpt', 'author', 'thumbnail', 'comments', 'revisions', 'custom-fields', ),
+		'show_in_rest'        => true,
+		'hierarchical'        => false,
+		'public'              => true,
+		'has_archive'         => true,
+		'rewrite'			        => array( 'slug' => 'information'),
+	);
+	register_post_type( 'presentation', $args );
+}
+
 
 add_filter( 'excerpt_length', function () {
 	return 100;
