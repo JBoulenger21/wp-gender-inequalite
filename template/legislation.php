@@ -24,7 +24,7 @@ get_header();
         <?php the_content(); ?> 
         </div>                     
     <?php endwhile; ?>
-   
+
 </section>
 
 <?php get_footer(); ?>

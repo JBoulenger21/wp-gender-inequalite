@@ -203,6 +203,12 @@ p {
   color: #86EBBA;
 }
 
+@media screen and (max-width: 475px) {
+  h2 {
+    width: 95%;
+    font-size: 1.5rem;
+  }
+}
 .cause {
   display: flex;
   flex-direction: row;
