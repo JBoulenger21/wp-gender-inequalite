@@ -10,7 +10,7 @@ get_header();
 
     <?php
         query_posts( array(
-            'post_type' => 'législation',
+            'post_type' => 'legislation',
             'showposts' => 4,
             'numberposts' => 4,
             'order' => 'ASC',
