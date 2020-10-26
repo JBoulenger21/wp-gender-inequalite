@@ -108,9 +108,6 @@
       right: 2%;
       font-size: 60px;
     }
-    ul{
-      list-style: none;
-    }
   
     /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
     @media screen and (max-height: 993px) {
@@ -147,7 +144,6 @@
     }
   }
 }
-<<<<<<< HEAD
 @media (max-width:981px){
   .contain-404{
     height: 55vh;
@@ -168,7 +164,7 @@
 
   }
 }
-=======
+
 @media screen and (max-width: 1201px){
   .header{
     h1{
@@ -176,5 +172,5 @@
     }
   }
 }
+
   
->>>>>>> feature/legislation
