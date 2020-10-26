@@ -484,6 +484,10 @@ p {
     font-size: 60px;
   }
 
+  ul {
+    list-style: none;
+  }
+
   /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
 }
 @media screen and (max-width: 993px) and (max-height: 993px) {
