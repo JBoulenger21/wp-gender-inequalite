@@ -28,6 +28,9 @@ h2 {
   padding: 1rem;
   border-radius: 7px;
 }
+h2:hover {
+  color: #531E6A;
+}
 
 h3 {
   color: #629E81;
@@ -96,14 +99,11 @@ p {
 
 .encadre-introduction-home {
   position: relative;
-  border: 2px solid #531E6A;
+  border: 2px solid #86EBBA;
   margin-top: 8rem;
   margin-bottom: 8rem;
   display: flex;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-  padding-left: 2rem;
-  padding-right: 2rem;
+  padding: 2.5rem;
 }
 .encadre-introduction-home .img-intro-home {
   width: 15rem;
@@ -115,6 +115,9 @@ p {
   top: 50%;
   transform: translateY(-50%);
   right: 0;
+}
+.encadre-introduction-home .p-intro-home p {
+  padding-right: 1.5rem;
 }
 
 .presentation-home {
@@ -133,21 +136,27 @@ p {
   width: 30rem;
 }
 
+.bg-section-pagehome {
+  background-color: white;
+  padding-top: 1rem;
+}
+
 .pages-home {
   margin-top: 8rem;
-  margin-bottom: 8rem;
+}
+.pages-home p {
+  color: black;
+  font-weight: 300;
+  padding: 1.2rem;
+}
+.pages-home .hauteur {
+  height: 171px;
 }
 .pages-home .img-page-home {
   width: 10rem;
 }
 .pages-home h3 {
   text-align: center;
-}
-.pages-home .p-home {
-  padding-left: 3rem;
-  padding-right: 3rem;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
 }
 .pages-home button {
   background-color: #D29EEB;
@@ -166,7 +175,7 @@ p {
 }
 .chiffres .container .données .articles {
   width: 70%;
-  margin: 0 auto 0 auto;
+  margin: 5rem auto 5rem auto;
 }
 .chiffres .container .données .articles p {
   font-size: 1.2rem;
@@ -177,10 +186,11 @@ p {
   display: flex;
   justify-content: center;
   margin-top: 5%;
-  background-color: white;
+  padding: 2%;
 }
 .chiffres .tableau img {
-  width: 60%;
+  width: 46rem;
+  opacity: 0.9;
 }
 
 .sources {
@@ -262,18 +272,18 @@ p {
   color: white;
   display: flex;
   justify-content: flex-start;
-  top: 55%;
+  top: 40%;
   font-size: 5rem;
   padding-left: 4rem;
 }
 .contain-404 h2 {
   color: white;
-  width: 50%;
+  width: 75%;
   position: absolute;
-  top: 72%;
+  top: 60%;
   font-size: 1.5rem;
   background-color: transparent !important;
-  padding-left: 1rem;
+  padding-left: 4rem;
   margin-top: 0;
   text-align: left;
 }
@@ -313,18 +323,6 @@ p {
 
   h1 {
     text-align: center;
-  }
-}
-@media screen and (max-width: 995px) {
-  .données {
-    display: block;
-  }
-  .données .base-salaire {
-    width: 100%;
-  }
-  .données .tableau-base {
-    width: 90%;
-    margin: auto;
   }
 }
 @media screen and (max-width: 993px) and (min-width: 770px) {
@@ -486,6 +484,10 @@ p {
     font-size: 60px;
   }
 
+  ul {
+    list-style: none;
+  }
+
   /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
 }
 @media screen and (max-width: 993px) and (max-height: 993px) {
@@ -518,9 +520,31 @@ p {
     margin-top: 0;
   }
 }
+@media (max-width: 981px) {
+  .contain-404 {
+    height: 55vh;
+  }
+  .contain-404 h2 {
+    top: 54%;
+  }
+}
+@media (min-width: 300px) {
+  .contain-404 h1 {
+    padding-left: 2rem;
+  }
+  .contain-404 h2 {
+    padding-left: 2rem;
+  }
+}
 @media screen and (max-width: 993px) {
   .logo-footer {
     display: none;
+  }
+}
+@media screen and (max-width: 475px) {
+  h2 {
+    width: 95%;
+    font-size: 1.5rem;
   }
 }
 

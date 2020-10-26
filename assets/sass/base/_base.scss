@@ -29,6 +29,9 @@ h2{
   width: 25rem;
   padding: 1rem;
   border-radius: 7px;
+  &:hover{
+    color: $purpleDark;
+  }
 }
 h3{
   color: $greenDark;

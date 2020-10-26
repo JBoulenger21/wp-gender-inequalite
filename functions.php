@@ -211,15 +211,14 @@ function consequence_custom_post_types() {
   );
   register_post_type( 'consequence', $args );
 }
-
-function detail_custom_post_types() {
+function legislation_custom_post_type() {
 	$labels = array(
-		'name'                => 'Plus de détails',
-		'singular_name'       => 'chiffres détaillés',
-		'menu_name'           => 'chiffres détaillés',
-		'all_items'           => 'Chiffres en détails',
-		'view_item'           => 'Voir les détails',
-		'add_new_item'        => 'Ajouter un nouvel article',
+		'name'                => 'legislation',
+		'singular_name'       => 'legislation',
+		'menu_name'           => 'legislation',
+		'all_items'           => 'Toutes les articles',
+		'view_item'           => 'Voir les articles',
+		'add_new_item'        => 'Ajouter une nouvelle presentation',
 		'add_new'             => 'Ajouter',
 		'edit_item'           => 'Editer un article',
 		'update_item'         => 'Modifier un article',
@@ -228,8 +227,8 @@ function detail_custom_post_types() {
 		'not_found_in_trash'  => 'Non trouvée dans la corbeille',
 	);
 	$args = array(
-		'label'               => 'chiffres détaillés',
-		'description'         => 'Tous  les chiffres',
+		'label'               => 'legislation',
+		'description'         => 'Tous sur les évènements',
 		'labels'              => $labels,
     'menu_icon'           => 'dashicons-edit-large',
     'menu_position'       => 5,
@@ -240,8 +239,9 @@ function detail_custom_post_types() {
 		'has_archive'         => true,
 		'rewrite'			        => array( 'slug' => 'information'),
 	);
-	register_post_type( 'detail', $args );
+	register_post_type( 'legislation', $args );
 }
+
 
 add_filter( 'excerpt_length', function () {
 	return 100;
@@ -256,6 +256,6 @@ add_action( 'init', 'consequence_custom_post_types' );
 add_action( 'init', 'presentation_custom_post_type' );
 add_action( 'init', 'introduction_custom_post_type' );
 add_action( 'init', 'chiffre_custom_post_type' );
-add_action( 'init', 'detail_custom_post_types' );
+add_action( 'init', 'legislation_custom_post_type' );
 add_action( 'after_setup_theme', 'themename_custom_logo_setup' );
 add_action( 'after_setup_theme', 'themename_custom_header_setup' );

@@ -12,9 +12,38 @@
     <header class="header">
       <div class="container">
         <nav class="navigation">
+          <!--Icone ouvrant menu-->
+          <div class="open-menu" onclick="openNav()">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </div>
+          <!-- The overlay -->
+          <div class="menu">
+            <div id="myNav" class="overlay">
+        <!-- Button to close the overlay navigation -->
+              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+                <div class="container">
+                  <div class="close-bar1"></div>
+                  <div class="close-bar2"></div>
+                  <div class="close-bar3"></div>
+                </div>
+              </a>
+        <!-- Overlay content -->
+              <div class="overlay-content">
+                <a>
+                  <?php wp_nav_menu( array (
+                    'theme_location' => 'navigation-hf',
+                    'menu_class' => 'menu_navigation',
+                  ) ); ?> 
+                </a>
+              </div>
+            </div>
+          </div>
+
           <div class="logo">
             <a href="<?php echo home_url( '/' ); ?>">
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.white.png" alt="icone logo">
+            <?php echo the_custom_logo()?>
             </a>
           </div>
           <div class="item-navigation">
@@ -28,11 +57,10 @@
                 </a>
               </li>
             </ul>
-
           </div>
-
-
+          
         </nav>
+
         <div class="container contain-404">
           <h1>Oops<span class="bidouille">_</span>!</h1>
           <h2 class="truc">Page non trouvée. Retournez à l'accueil.</h2>
@@ -41,6 +69,7 @@
       </div>
 
     </header>
+
     <style>
       .header{
         background-image: url('<?php header_image() ?>');
@@ -50,3 +79,13 @@
         width: 100%;
       }
     </style>
+    <script>
+      /* Open when someone clicks on the span element */
+      function openNav() {
+        document.getElementById("myNav").style.width = "100%";
+      }
+      /* Close when someone clicks on the "x" symbol inside the overlay */
+      function closeNav() {
+        document.getElementById("myNav").style.width = "0%";
+      }
+    </script>

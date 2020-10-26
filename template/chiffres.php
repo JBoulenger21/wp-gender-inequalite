@@ -8,7 +8,7 @@ get_header();
 ?>
  
  <section class="chiffres">
-    <div class="container">
+    
         <!-- appel du custom post -->
         <?php
             query_posts( array(
@@ -19,20 +19,20 @@ get_header();
             ) );
         ?>
         <?php while (have_posts()) : the_post(); ?>
-
-        <h2><?php the_title(); ?></h2>
+        <div class="container">
+            <h2><?php the_title(); ?></h2>
 
     <!-- Présentation des chiffres bruts -->
-        <div class="données">
-            <div class="articles">
-                <?php the_content(); ?>                     
+            <div class="données">
+                <div class="articles">
+                    <?php the_content(); ?>                     
+                </div>
             </div>
         </div>
-    </div>
-    <div class="tableau container-fluid">
-        <!-- <div class=""> -->
-        <?php the_post_thumbnail('post-thumbnail', ['class' => 'img-fluid', 'alt' => '']); ?>
-    </div>
+        <div class="tableau container-fluid">
+            <!-- <div class=""> -->
+            <?php the_post_thumbnail('post-thumbnail', ['class' => 'img-fluid', 'alt' => '']); ?>
+        </div>
     <!-- </div> -->
     <?php endwhile; ?>
     <!-- </div>   -->
