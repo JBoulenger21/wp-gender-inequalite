@@ -214,20 +214,20 @@ function consequence_custom_post_types() {
 function legislation_custom_post_type() {
 	$labels = array(
 		'name'                => 'legislation',
-		'singular_name'       => 'presentation',
-		'menu_name'           => 'presentation',
-		'all_items'           => 'Toutes les presentations',
-		'view_item'           => 'Voir les presentations',
+		'singular_name'       => 'legislation',
+		'menu_name'           => 'legislation',
+		'all_items'           => 'Toutes les articles',
+		'view_item'           => 'Voir les articles',
 		'add_new_item'        => 'Ajouter une nouvelle presentation',
 		'add_new'             => 'Ajouter',
-		'edit_item'           => 'Editer la presentation',
-		'update_item'         => 'Modifier la presentation',
-		'search_items'        => 'Rechercher une presentation',
+		'edit_item'           => 'Editer un article',
+		'update_item'         => 'Modifier un article',
+		'search_items'        => 'Rechercher un article',
 		'not_found'           => 'Non trouvée',
 		'not_found_in_trash'  => 'Non trouvée dans la corbeille',
 	);
 	$args = array(
-		'label'               => 'presentation',
+		'label'               => 'legislation',
 		'description'         => 'Tous sur les évènements',
 		'labels'              => $labels,
     'menu_icon'           => 'dashicons-edit-large',
@@ -239,7 +239,7 @@ function legislation_custom_post_type() {
 		'has_archive'         => true,
 		'rewrite'			        => array( 'slug' => 'information'),
 	);
-	register_post_type( 'presentation', $args );
+	register_post_type( 'legislation', $args );
 }
 
 
@@ -256,5 +256,6 @@ add_action( 'init', 'consequence_custom_post_types' );
 add_action( 'init', 'presentation_custom_post_type' );
 add_action( 'init', 'introduction_custom_post_type' );
 add_action( 'init', 'chiffre_custom_post_type' );
+add_action( 'init', 'legislation_custom_post_type' );
 add_action( 'after_setup_theme', 'themename_custom_logo_setup' );
 add_action( 'after_setup_theme', 'themename_custom_header_setup' );
