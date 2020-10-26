@@ -147,3 +147,23 @@
     }
   }
 }
+@media (max-width:981px){
+  .contain-404{
+    height: 55vh;
+    h2{
+      top:54%;
+     
+    }
+  }
+}
+@media (min-width:300px){
+  .contain-404{
+    h1{
+      padding-left: 2rem;
+    }
+    h2{
+      padding-left: 2rem;
+    }
+
+  }
+}

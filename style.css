@@ -272,18 +272,18 @@ p {
   color: white;
   display: flex;
   justify-content: flex-start;
-  top: 55%;
+  top: 40%;
   font-size: 5rem;
   padding-left: 4rem;
 }
 .contain-404 h2 {
   color: white;
-  width: 50%;
+  width: 75%;
   position: absolute;
-  top: 72%;
+  top: 60%;
   font-size: 1.5rem;
   background-color: transparent !important;
-  padding-left: 1rem;
+  padding-left: 4rem;
   margin-top: 0;
   text-align: left;
 }
@@ -518,6 +518,22 @@ p {
     font-size: 2rem;
     padding-left: 1rem;
     margin-top: 0;
+  }
+}
+@media (max-width: 981px) {
+  .contain-404 {
+    height: 55vh;
+  }
+  .contain-404 h2 {
+    top: 54%;
+  }
+}
+@media (min-width: 300px) {
+  .contain-404 h1 {
+    padding-left: 2rem;
+  }
+  .contain-404 h2 {
+    padding-left: 2rem;
   }
 }
 @media screen and (max-width: 993px) {
