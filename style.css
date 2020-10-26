@@ -51,6 +51,16 @@ p {
   font-weight: lighter;
 }
 
+hr {
+  color: white;
+  height: 2px !important;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
 @font-face {
   font-family: "Poppins";
   src: url("../fonts/Poppins-Italic.ttf");

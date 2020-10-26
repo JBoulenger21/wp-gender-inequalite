@@ -165,4 +165,7 @@ while (have_posts()) : the_post();
 </div>
 <?php endwhile; ?>
 </div>
+
+<hr>
+
 <?php get_footer();?>

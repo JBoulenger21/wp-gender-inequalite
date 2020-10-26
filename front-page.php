@@ -1,5 +1,7 @@
 <?php get_header(); ?>
 
+<hr class="w-25">
+
 <div class="container front-page">
 
         <?php

@@ -51,3 +51,14 @@ p{
   color: white;
   font-weight: lighter;
 }
+hr{
+  color: white;
+  height: 2px!important;
+  width: 50%;
+  margin: {
+    left: auto;
+    right: auto;
+    top: 3rem;
+    bottom: 3rem;
+  }
+}
