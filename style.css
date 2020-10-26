@@ -217,6 +217,10 @@ hr {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
+  align-items: center;
+}
+.cause img {
+  margin-top: 5rem;
 }
 
 .causeContent {
