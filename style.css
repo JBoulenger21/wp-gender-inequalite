@@ -223,35 +223,25 @@ hr {
   flex-direction: row;
   flex-wrap: nowrap;
   align-items: center;
-  margin: auto;
 }
 .cause img {
   margin-top: 5rem;
 }
 .cause .childcenter {
-  margin: auto;
-}
-.cause .childcenter img {
   display: flex;
-  margin: auto;
-}
-.cause .childcenter h3 {
-  display: flex;
+  flex-wrap: wrap;
   justify-content: flex-end;
 }
 .cause .childcenter p {
   text-align: right;
-  display: flex;
-  margin: auto;
 }
 .cause .childcenter .causeContent {
   display: flex;
   justify-content: flex-end;
-  margin: auto;
 }
 
 .causeContent {
-  width: 20rem;
+  width: 25rem;
 }
 
 .causeDesktop {

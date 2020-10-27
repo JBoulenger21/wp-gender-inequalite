@@ -8,34 +8,25 @@
   flex-direction: row;
   flex-wrap: nowrap;
   align-items: center;
-  margin: auto;
+
   img{
     margin-top: 5rem;
   }
   .childcenter{
-    margin: auto;
-    img{
-      display: flex;
-      margin: auto;
-    }
-    h3{
-      display: flex;
-      justify-content: flex-end;
-    }
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
     p{
       text-align: right;
-      display: flex;
-      margin: auto;
     }
     .causeContent{
       display: flex;
       justify-content: flex-end;
-      margin: auto;
     }
   }
 }
 .causeContent{
-  width: 20rem;
+  width: 25rem;
 }
 .causeDesktop{
   display:block;
