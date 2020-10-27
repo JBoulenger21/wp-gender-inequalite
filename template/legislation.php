@@ -20,9 +20,10 @@ get_header();
 
     <div class="container">
         <h2><?php the_title(); ?></h2>
-        <?php the_post_thumbnail('post-thumbnail', ['class' => 'img-fluid', 'alt' => '']); ?>
-        <?php the_content(); ?> 
-        </div>                     
+        <div class="legislation-content">           
+            <?php the_content(); ?>
+        </div> 
+    </div>                     
     <?php endwhile; ?>
 
 </section>
