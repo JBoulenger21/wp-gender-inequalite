@@ -19,10 +19,12 @@ get_header();
     <?php while (have_posts()) : the_post(); ?>
 
     <div class="container">
-        <h2><?php the_title(); ?></h2>
-        <div class="legislation-content">           
-            <?php the_content(); ?>
-        </div> 
+        <div class="encadre-legis">
+            <h2><?php the_title(); ?></h2>
+            <div class="legislation-content">           
+                <?php the_content(); ?>
+            </div> 
+        </div>
     </div>                     
     <?php endwhile; ?>
 

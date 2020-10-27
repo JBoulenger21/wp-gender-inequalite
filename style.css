@@ -213,6 +213,19 @@ hr {
   color: #86EBBA;
 }
 
+.legislation .container {
+  position: relative;
+}
+.legislation .container .encadre-legis {
+  border: solid 5px #86EBBA;
+  border-bottom: none;
+  border-right: none;
+  width: 80%;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  margin: auto;
+}
+
 .legislation-content {
   margin-top: 5%;
 }
