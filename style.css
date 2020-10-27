@@ -218,12 +218,6 @@ hr {
   margin: auto;
 }
 
-.cause {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  align-items: center;
-}
 .cause img {
   margin-top: 5rem;
 }
@@ -233,6 +227,10 @@ hr {
   justify-content: flex-end;
 }
 .cause .childcenter p {
+  text-align: right;
+}
+.cause .childcenter h3 {
+  width: 60%;
   text-align: right;
 }
 .cause .childcenter .causeContent {

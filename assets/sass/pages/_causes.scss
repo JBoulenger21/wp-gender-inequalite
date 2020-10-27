@@ -4,19 +4,24 @@
   margin: auto;
 }
 .cause{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  align-items: center;
+  // display: flex;
+  // flex-direction: row;
+  // flex-wrap: nowrap;
+  // align-items: center;
 
   img{
     margin-top: 5rem;
   }
   .childcenter{
     display: flex;
+    // flex-direction: column;
     flex-wrap: wrap;
     justify-content: flex-end;
     p{
+      text-align: right;
+    }
+    h3{
+      width: 60%;
       text-align: right;
     }
     .causeContent{
