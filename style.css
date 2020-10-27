@@ -213,14 +213,41 @@ hr {
   color: #86EBBA;
 }
 
+.centerCause {
+  width: 150vh;
+  margin: auto;
+}
+
 .cause {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   align-items: center;
+  margin: auto;
 }
 .cause img {
   margin-top: 5rem;
+}
+.cause .childcenter {
+  margin: auto;
+}
+.cause .childcenter img {
+  display: flex;
+  margin: auto;
+}
+.cause .childcenter h3 {
+  display: flex;
+  justify-content: flex-end;
+}
+.cause .childcenter p {
+  text-align: right;
+  display: flex;
+  margin: auto;
+}
+.cause .childcenter .causeContent {
+  display: flex;
+  justify-content: flex-end;
+  margin: auto;
 }
 
 .causeContent {

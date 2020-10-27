@@ -1,12 +1,37 @@
 @import "../utils/variables";
-
+.centerCause{
+  width: 150vh;
+  margin: auto;
+}
 .cause{
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   align-items: center;
+  margin: auto;
   img{
     margin-top: 5rem;
+  }
+  .childcenter{
+    margin: auto;
+    img{
+      display: flex;
+      margin: auto;
+    }
+    h3{
+      display: flex;
+      justify-content: flex-end;
+    }
+    p{
+      text-align: right;
+      display: flex;
+      margin: auto;
+    }
+    .causeContent{
+      display: flex;
+      justify-content: flex-end;
+      margin: auto;
+    }
   }
 }
 .causeContent{
@@ -18,4 +43,3 @@
 .causeResponsive{
   display: none;
 }
-
