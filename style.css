@@ -224,18 +224,33 @@ hr {
   text-decoration: none;
 }
 
-.cause {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  align-items: center;
+.centerCause {
+  width: 150vh;
+  margin: auto;
 }
+
 .cause img {
   margin-top: 5rem;
 }
+.cause .childcenter {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+.cause .childcenter p {
+  text-align: right;
+}
+.cause .childcenter h3 {
+  width: 60%;
+  text-align: right;
+}
+.cause .childcenter .causeContent {
+  display: flex;
+  justify-content: flex-end;
+}
 
 .causeContent {
-  width: 20rem;
+  width: 30rem;
 }
 
 .causeDesktop {
