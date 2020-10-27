@@ -71,9 +71,20 @@
       .header{
         background-image: url('<?php header_image() ?>');
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: contain;
+        background-position: center;
         height: 100vh;
         width: 100%;
+      }
+      @media screen and (min-width: 1148px) and (max-width: 1520px){
+        .header{
+          background-size: auto;
+        }
+      }
+      @media screen and (max-width: 681px){
+        .header{
+          background-image: none;
+        }
       }
     </style>
     <script>
