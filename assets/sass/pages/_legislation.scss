@@ -9,11 +9,8 @@
                 bottom: none;
                 right: none;
             }
-            width: 80%;
-            padding: {
-                left: 5rem;
-                right: 5rem;
-            }
+            width: 90%;
+            height: 40vh;
             margin: auto;
         }
         
@@ -23,7 +20,8 @@
 
 
 .legislation-content{
-    margin-top: 5%;
+    width: 75%;
+    margin: auto;
     li{
         color: $greenLight;
         font-weight: lighter;
