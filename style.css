@@ -203,6 +203,17 @@ p {
   color: #86EBBA;
 }
 
+.legislation-content {
+  margin-top: 5%;
+}
+.legislation-content li {
+  color: #86EBBA;
+  font-weight: lighter;
+}
+.legislation-content a {
+  text-decoration: none;
+}
+
 .cause {
   display: flex;
   flex-direction: row;
