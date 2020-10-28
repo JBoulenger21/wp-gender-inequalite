@@ -213,8 +213,21 @@ hr {
   color: #86EBBA;
 }
 
+.legislation .container {
+  position: relative;
+}
+.legislation .container .encadre-legis {
+  border: solid 5px #86EBBA;
+  border-bottom: none;
+  border-right: none;
+  width: 90%;
+  height: 40vh;
+  margin: auto;
+}
+
 .legislation-content {
-  margin-top: 5%;
+  width: 75%;
+  margin: auto;
 }
 .legislation-content li {
   color: #86EBBA;
@@ -337,7 +350,7 @@ hr {
   height: auto;
 }
 .infographie img {
-  width: 40%;
+  width: 90%;
   border: 3px solid white;
   padding: 3rem;
 }
