@@ -7,6 +7,7 @@ get_header();
 <div class="container">
 <h1>Causes</h1>
 
+<<<<<<< HEAD
 <?php
   $cause = get_posts(array(
   'post_type' => 'cause',
@@ -33,6 +34,42 @@ foreach ($cause as $post) {
       <h3><?php the_title(); ?></h3>
       <div class="causeContent">
        <?php the_excerpt(); ?>
+=======
+<div class="centerCause">
+  <div class="container">
+    <div class="encadre-legis">
+      <h2>Causes</h2>
+    </div>
+
+
+    <?php
+      $cause = get_posts(array(
+      'post_type' => 'cause',
+      'showposts' => 3,
+      'numberposts' => 3,
+      'order' => 'ASC'
+      ) );
+    $i = 0;
+    while (have_posts()) : the_post();
+     ?>
+    <div class="causeDesktop">
+     <?php
+
+    foreach ($cause as $post) {
+
+      $i++;
+      if ($i % 2 == 0){
+    ?>
+    <div class="row cause">
+      <div class="col-lg-6 col-sm-12">
+          <?php the_post_thumbnail('medium',[ 'alt' => '']) ?>
+      </div>
+      <div class="col-lg-6 col-sm-12 childcenter">
+          <h3><?php the_title(); ?></h3>
+          <div class="causeContent">
+           <?php the_excerpt(); ?>
+          </div>
+>>>>>>> features/Julie
       </div>
   </div>
 </div>
@@ -84,6 +121,12 @@ while (have_posts()) : the_post();
 </div>
 
 
+<<<<<<< HEAD
+=======
+<div class="centerCause">
+  <div class="container">
+    <h2>Conséquences</h2>
+>>>>>>> features/Julie
 
 
 <div class="container">
