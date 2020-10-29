@@ -20,7 +20,9 @@ get_header();
         ?>
         <?php while (have_posts()) : the_post(); ?>
         <div class="container">
-            <h2><?php the_title(); ?></h2>
+            <div class="encadre-legis">
+                <h2><?php the_title(); ?></h2>
+            </div>
 
     <!-- Présentation des chiffres bruts -->
             <div class="données">
@@ -29,7 +31,7 @@ get_header();
                 </div>
             </div>
         </div>
-        <div class="tableau container-fluid">
+        <div class="tableau container-fluid mb-5">
             <!-- <div class=""> -->
             <?php the_post_thumbnail('post-thumbnail', ['class' => 'img-fluid', 'alt' => '']); ?>
         </div>
