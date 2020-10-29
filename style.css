@@ -109,7 +109,7 @@ hr {
 
 .encadre-introduction-home {
   position: relative;
-  border: 2px solid #86EBBA;
+  border: 3px solid #86EBBA;
   margin-top: 8rem;
   margin-bottom: 8rem;
   display: flex;
@@ -216,8 +216,9 @@ hr {
 .legislation .container {
   position: relative;
 }
-.legislation .container .encadre-legis {
-  border: solid 5px #86EBBA;
+
+.encadre-legis {
+  border: solid 3px #86EBBA;
   border-bottom: none;
   border-right: none;
   width: 90%;

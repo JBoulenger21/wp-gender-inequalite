@@ -3,21 +3,19 @@
 .legislation{
     .container{
         position: relative;
-        .encadre-legis{
-            border: solid 5px $greenLight;
-            border: {
-                bottom: none;
-                right: none;
-            }
-            width: 90%;
-            height: 40vh;
-            margin: auto;
-        }
-        
     }
     
 }
-
+.encadre-legis{
+    border: solid 3px $greenLight;
+    border: {
+        bottom: none;
+        right: none;
+    }
+    width: 90%;
+    height: 40vh;
+    margin: auto;
+}
 
 .legislation-content{
     width: 75%;
