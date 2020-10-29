@@ -269,6 +269,8 @@ hr {
 
 .causeDesktop {
   display: block;
+  width: 85%;
+  margin: auto;
 }
 
 .causeResponsive {
