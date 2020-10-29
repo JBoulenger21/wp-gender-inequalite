@@ -368,6 +368,12 @@ hr {
 }
 
 @media screen and (max-width: 680px) {
+  .centerCause {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
   .cause {
     display: flex;
     flex-wrap: wrap;
@@ -378,7 +384,8 @@ hr {
   }
 
   .causeResponsive {
-    display: block;
+    display: flex;
+    justify-content: center;
     text-align: center;
   }
 
@@ -386,12 +393,16 @@ hr {
     text-align: center;
   }
 }
+.causeContent {
+  display: flex;
+  justify-content: center;
+}
 .causeContent p {
   width: 60%;
 }
 .causeContent .encadre-legis {
   width: 35%;
-  margin: none;
+  margin: 0;
 }
 
 @media screen and (max-width: 993px) and (min-width: 770px) {

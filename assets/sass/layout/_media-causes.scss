@@ -1,6 +1,12 @@
 @import "../utils/variables";
 
 @media screen and (max-width:680px){
+  .centerCause{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
   .cause{
     display: flex;
     flex-wrap: wrap;
@@ -9,7 +15,8 @@
     display: none;
   }
   .causeResponsive{
-    display: block;
+    display: flex;
+    justify-content: center;
     text-align: center;
   }
   h1{
@@ -17,11 +24,13 @@
   }
 }
 .causeContent{
+  display: flex;
+  justify-content: center;
   p{
     width: 60%;
     }
   .encadre-legis{
     width: 35%;
-    margin: none;
+    margin: 0;
   }
 }
