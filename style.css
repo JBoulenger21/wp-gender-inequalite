@@ -7,15 +7,16 @@ Tags: HTML CSS JS
 Version: 1.0
 */
 body {
-  font-family: "Poppins";
+  font-family: "Poppins Light";
   background-color: #531E6A;
 }
 
 h1 {
-  font-family: "Sora";
+  font-family: "Sora SemiBold";
 }
 
 h2 {
+  font-family: "Sora Regular";
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 3rem;
@@ -33,6 +34,7 @@ h2:hover {
 }
 
 h3 {
+  font-family: "Sora Light";
   color: #629E81;
   font-size: 1.5rem;
   margin-top: 5rem;
@@ -63,19 +65,21 @@ hr {
 
 @font-face {
   font-family: "Poppins";
-  src: url("../fonts/Poppins-Italic.ttf");
-  src: url("../fonts/Poppins-Light.ttf");
-  src: url("../fonts/Poppins-Medium.ttf");
-  src: url("../fonts/Poppins-Regular.ttf");
-  src: url("../fonts/Poppins-Thin.ttf");
+  src: url("assets/fonts/Poppins-Italic.ttf");
+  src: url("assets/fonts/Poppins-Light.ttf");
+  src: url("assets/fonts/Poppins-Medium.ttf");
+  src: url("assets/fonts/Poppins-Regular.ttf");
+  src: url("assets/fonts/Poppins-Thin.ttf");
 }
 @font-face {
   font-family: "Sora";
-  src: url("../fonts/Sora-Bold.ttf");
-  src: url("../fonts/Sora-ExtraBold.ttf");
-  src: url("../fonts/Sora-Medium.ttf");
-  src: url("../fonts/Sora-Regular.ttf");
-  src: url("../fonts/Sora-SemiBold.ttf");
+  src: url("assets/fonts/Sora-Bold.ttf");
+  src: url("assets/fonts/Sora-ExtraBold.ttf");
+  src: url("assets/fonts/Sora-Medium.ttf");
+  src: url("assets/fonts/Sora-Regular.ttf");
+  src: url("assets/fonts/Sora-SemiBold.ttf");
+  src: url("assets/fonts/Sora-Light.ttf");
+  src: url("assets/fonts/Sora-ExtraLight.ttf");
 }
 .header h1 {
   color: white;
