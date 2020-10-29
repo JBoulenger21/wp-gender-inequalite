@@ -275,6 +275,7 @@ hr {
 
 .causeResponsive {
   display: none;
+  width: 85%;
 }
 
 .footer {
@@ -381,6 +382,14 @@ hr {
     text-align: center;
   }
 }
+.causeContent p {
+  width: 60%;
+}
+.causeContent .encadre-legis {
+  width: 35%;
+  margin: none;
+}
+
 @media screen and (max-width: 993px) and (min-width: 770px) {
   .encadre-introduction-home {
     display: flex;

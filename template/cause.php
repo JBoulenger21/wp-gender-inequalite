@@ -85,7 +85,7 @@ get_header();
             <?php the_post_thumbnail('thumbnail',[ 'alt' => '']) ?>
         </div>
       </div>
-    </div>
+  </div>
   <?php endwhile; ?>
 
 
