@@ -213,6 +213,15 @@ hr {
   color: #86EBBA;
 }
 
+.encadre-legis {
+  border: solid 3px #86EBBA;
+  border-bottom: none;
+  border-right: none;
+  width: 90%;
+  height: 40vh;
+  margin: auto;
+}
+
 .centerCause {
   width: 150vh;
   margin: auto;

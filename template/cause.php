@@ -7,7 +7,10 @@ get_header();
 
 <div class="centerCause">
   <div class="container">
-    <h1>Causes</h1>
+    <div class="encadre-legis">
+      <h2>Causes</h2>
+    </div>
+
 
     <?php
       $cause = get_posts(array(
@@ -90,7 +93,7 @@ get_header();
 
 <div class="centerCause">
   <div class="container">
-    <h1>Conséquences</h1>
+    <h2>Conséquences</h2>
 
     <?php
     $consequence = get_posts(array(
