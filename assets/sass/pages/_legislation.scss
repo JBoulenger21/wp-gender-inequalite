@@ -1,9 +1,30 @@
 @import "../utils/variables";
 
+
+.legislation{
+    .container{
+        position: relative;
+    }
+
+}
+
+.encadre-legis{
+    border: solid 3px $greenLight;
+    border: {
+        bottom: none;
+        right: none;
+    }
+    width: 90%;
+    height: 40vh;
+    margin: auto;
+}
+
+
 .legislation-content{
-    margin-top: 5%;
+    width: 75%;
+    margin: auto;
     li{
-        color: #86EBBA;
+        color: $greenLight;
         font-weight: lighter;
     }
     a{

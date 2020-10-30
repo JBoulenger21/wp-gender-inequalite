@@ -1,21 +1,38 @@
 @import "../utils/variables";
-
+.centerCause{
+  width: 150vh;
+  margin: auto;
+}
 .cause{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  align-items: center;
+
   img{
     margin-top: 5rem;
   }
+  .childcenter{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    p{
+      text-align: right;
+    }
+    h3{
+      width: 60%;
+      text-align: right;
+    }
+    .causeContent{
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
 }
 .causeContent{
-  width: 20rem;
+  width: 30rem;
 }
 .causeDesktop{
   display:block;
+  width: 85%;
+  margin: auto;
 }
 .causeResponsive{
   display: none;
 }
-

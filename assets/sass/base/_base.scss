@@ -9,13 +9,14 @@ Version: 1.0
 @import "../utils/variables";
 
 body{
-  font-family: 'Poppins';
+  font-family: 'Poppins Light';
   background-color: $purpleDark;
 }
 h1{
-  font-family: 'Sora';
+  font-family: 'Sora SemiBold';
 }
 h2{
+  font-family: 'Sora Regular';
   margin: {
       left: auto;
       right: auto;
@@ -34,6 +35,7 @@ h2{
   }
 }
 h3{
+  font-family: 'Sora Light';
   color: $greenDark;
   font-size: 1.5rem;
   margin: {

@@ -7,15 +7,16 @@ Tags: HTML CSS JS
 Version: 1.0
 */
 body {
-  font-family: "Poppins";
+  font-family: "Poppins Light";
   background-color: #531E6A;
 }
 
 h1 {
-  font-family: "Sora";
+  font-family: "Sora SemiBold";
 }
 
 h2 {
+  font-family: "Sora Regular";
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 3rem;
@@ -33,6 +34,7 @@ h2:hover {
 }
 
 h3 {
+  font-family: "Sora Light";
   color: #629E81;
   font-size: 1.5rem;
   margin-top: 5rem;
@@ -63,19 +65,21 @@ hr {
 
 @font-face {
   font-family: "Poppins";
-  src: url("../fonts/Poppins-Italic.ttf");
-  src: url("../fonts/Poppins-Light.ttf");
-  src: url("../fonts/Poppins-Medium.ttf");
-  src: url("../fonts/Poppins-Regular.ttf");
-  src: url("../fonts/Poppins-Thin.ttf");
+  src: url("assets/fonts/Poppins-Italic.ttf");
+  src: url("assets/fonts/Poppins-Light.ttf");
+  src: url("assets/fonts/Poppins-Medium.ttf");
+  src: url("assets/fonts/Poppins-Regular.ttf");
+  src: url("assets/fonts/Poppins-Thin.ttf");
 }
 @font-face {
   font-family: "Sora";
-  src: url("../fonts/Sora-Bold.ttf");
-  src: url("../fonts/Sora-ExtraBold.ttf");
-  src: url("../fonts/Sora-Medium.ttf");
-  src: url("../fonts/Sora-Regular.ttf");
-  src: url("../fonts/Sora-SemiBold.ttf");
+  src: url("assets/fonts/Sora-Bold.ttf");
+  src: url("assets/fonts/Sora-ExtraBold.ttf");
+  src: url("assets/fonts/Sora-Medium.ttf");
+  src: url("assets/fonts/Sora-Regular.ttf");
+  src: url("assets/fonts/Sora-SemiBold.ttf");
+  src: url("assets/fonts/Sora-Light.ttf");
+  src: url("assets/fonts/Sora-ExtraLight.ttf");
 }
 .header h1 {
   color: white;
@@ -109,7 +113,7 @@ hr {
 
 .encadre-introduction-home {
   position: relative;
-  border: 2px solid #86EBBA;
+  border: 3px solid #86EBBA;
   margin-top: 8rem;
   margin-bottom: 8rem;
   display: flex;
@@ -213,8 +217,22 @@ hr {
   color: #86EBBA;
 }
 
+.legislation .container {
+  position: relative;
+}
+
+.encadre-legis {
+  border: solid 3px #86EBBA;
+  border-bottom: none;
+  border-right: none;
+  width: 90%;
+  height: 40vh;
+  margin: auto;
+}
+
 .legislation-content {
-  margin-top: 5%;
+  width: 75%;
+  margin: auto;
 }
 .legislation-content li {
   color: #86EBBA;
@@ -224,22 +242,39 @@ hr {
   text-decoration: none;
 }
 
-.cause {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  align-items: center;
+.centerCause {
+  width: 150vh;
+  margin: auto;
 }
+
 .cause img {
   margin-top: 5rem;
 }
+.cause .childcenter {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+.cause .childcenter p {
+  text-align: right;
+}
+.cause .childcenter h3 {
+  width: 60%;
+  text-align: right;
+}
+.cause .childcenter .causeContent {
+  display: flex;
+  justify-content: flex-end;
+}
 
 .causeContent {
-  width: 20rem;
+  width: 30rem;
 }
 
 .causeDesktop {
   display: block;
+  width: 85%;
+  margin: auto;
 }
 
 .causeResponsive {
@@ -322,7 +357,7 @@ hr {
   height: auto;
 }
 .infographie img {
-  width: 30%;
+  width: 90%;
   border: 3px solid white;
   padding: 3rem;
 }
