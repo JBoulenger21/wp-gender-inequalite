@@ -282,32 +282,49 @@ hr {
 }
 
 .footer {
-  position: relative;
   background-color: #531E6A;
   height: 40vh;
 }
-.footer .footer-navigation {
-  position: absolute;
+.footer .footer-container {
+  display: flex;
+  justify-content: space-between;
+}
+.footer .footer-container .footer-navigation {
+  /*position: absolute;
   top: 50%;
-  transform: translateY(-50%);
+  transform: translateY(-50%);*/
+  width: 30%;
   text-align: center;
   text-decoration: none;
 }
-.footer .footer-navigation li {
+.footer .footer-container .footer-navigation li {
   list-style: none;
   padding: 0.5rem;
 }
-.footer .footer-navigation a {
+.footer .footer-container .footer-navigation a {
   text-decoration: none;
 }
-.footer .logo-footer {
-  position: absolute;
+.footer .footer-container .logo-footer {
+  /*position: absolute;
   top: 50%;
-  transform: translateY(-50%);
+  transform: translateY(-50%);*/
+  text-align: center;
+  width: 30%;
   opacity: 0.6;
 }
-.footer .logo-footer:hover {
+.footer .footer-container .logo-footer:hover {
   opacity: 1;
+}
+.footer .footer-container .avis {
+  width: 30%;
+}
+.footer .footer-container .avis .smiley {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.footer .footer-container .avis .smiley img {
+  width: 30%;
 }
 
 .background404 {

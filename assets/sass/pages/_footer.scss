@@ -1,31 +1,50 @@
 @import "../utils/variables";
 
 .footer{
-    position: relative;
+    //position: relative;
     // margin-top: 5rem;
     background-color: $purpleDark;
     height: 40vh;
-    .footer-navigation{
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        text-align: center;
-        text-decoration: none;
-        li{ 
-            list-style: none;
-            padding: 0.5rem;
-        }
-        a{
+    .footer-container{
+        display: flex;
+        justify-content: space-between;
+        .footer-navigation{
+            /*position: absolute;
+            top: 50%;
+            transform: translateY(-50%);*/
+            width: 30%;
+            text-align: center;
             text-decoration: none;
+            li{ 
+                list-style: none;
+                padding: 0.5rem;
+            }
+            a{
+                text-decoration: none;
+            }
+        }
+        .logo-footer{
+            /*position: absolute;
+            top: 50%;
+            transform: translateY(-50%);*/
+            text-align: center;
+            width: 30%;
+            opacity: 0.6;
+            &:hover{
+                opacity: 1;
+            }
+        }
+        .avis{
+          width: 30%;  
+          .smiley{
+              width: 100%;
+              display: flex;
+              justify-content: space-between;
+              img{
+                  width: 30%;
+              }
+          }
         }
     }
-    .logo-footer{
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        opacity: 0.6;
-        &:hover{
-            opacity: 1;
-        }
-    }
+    
 }
