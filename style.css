@@ -132,6 +132,7 @@ hr {
 }
 .encadre-introduction-home .p-intro-home p {
   padding-right: 1.5rem;
+  padding-left: 1rem;
 }
 
 .presentation-home {
@@ -429,7 +430,7 @@ hr {
   }
   .encadre-introduction-home .img-intro-home {
     display: block;
-    width: 50%;
+    width: 100%;
     margin: 0 auto 0 auto;
     padding-right: 2rem;
   }
@@ -439,6 +440,10 @@ hr {
     margin-left: auto;
     transform: none;
     position: relative;
+  }
+
+  .presentation-home .presentation-home-image {
+    width: 100%;
   }
 }
 @media (max-width: 680px) {
