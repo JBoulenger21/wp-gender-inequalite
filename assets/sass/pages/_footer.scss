@@ -8,6 +8,7 @@
     .footer-container{
         display: flex;
         justify-content: space-between;
+        align-items: center;
         .footer-navigation{
             /*position: absolute;
             top: 50%;
@@ -43,6 +44,9 @@
               img{
                   width: 30%;
               }
+          }
+          img{
+              width: 100%;
           }
         }
     }

@@ -24,12 +24,13 @@
       <!-- </div> -->
 
       <div class="avis">
-        <h5>Ce site vous à été utile? Dite le nous.</h5>
+        <!-- <h5>Ce site vous à été utile? Dite le nous.</h5>
         <div class="smiley">
           <img src="<?php echo get_template_directory_uri(); ?>/assets/images/smiley-content.png" alt="icone logo">       
           <img src="<?php echo get_template_directory_uri(); ?>/assets/images/smiley-ni-content-ni-pas-content.png" alt="icone logo">        
           <img src="<?php echo get_template_directory_uri(); ?>/assets/images/smiley-pas-contenti.png" alt="icone logo">         
-        </div>
+        </div> -->
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/header-img.png" alt="">
       </div>
 
     </div>
