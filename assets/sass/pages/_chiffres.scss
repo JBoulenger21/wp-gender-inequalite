@@ -1,0 +1,41 @@
+@import "../utils/variables";
+
+// Style de la page "Les chiffres des inégalitées"
+.chiffres{  
+    .container{
+        
+        .données{
+            margin-top: 5%;
+            .articles{
+                width: 70%;
+                margin: 5rem auto 5rem auto;
+                p{
+                    font-size: 1.2rem;
+                    color: white;
+                    font-weight: lighter;
+                }
+            }
+        }      
+    }
+    
+        .tableau{
+            display: flex;
+            justify-content: center;
+            margin-top: 5%;
+            padding: 2%;
+            img{
+                width: 46rem;   
+                opacity: 0.9;        
+            }
+        }
+    }
+    .sources{
+        text-decoration: none;    
+        margin: 0 0 0 auto; 
+        font-size: smaller;  
+        color: black;
+        &:hover{
+            color: $greenLight;
+        }
+    }
+   

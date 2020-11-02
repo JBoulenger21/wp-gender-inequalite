@@ -1,0 +1,42 @@
+@import "../utils/variables";
+
+@media screen and (max-width: 993px) and (min-width: 770px){
+    .encadre-introduction-home{
+        display: flex;
+        .img-intro-home{
+            width: 15rem;
+            padding-right: 2rem;
+            margin: 0;
+        }
+        .p-intro-home{
+            width: 60%;
+            margin-right: 2rem;
+            margin-left: auto;
+        }
+    }
+}
+@media screen and (max-width: 769px){
+    .encadre-introduction-home{
+        display: flex;
+        flex-wrap: wrap;
+        .img-intro-home{
+            display: block;
+            width: 100%;
+            margin: 0 auto 0 auto;
+            padding-right: 2rem;
+        }
+        .p-intro-home{
+            width: 100%;
+            margin-right: 0;
+            margin-left: auto;
+            transform: none;
+            position: relative;
+        }
+    }
+    .presentation-home{
+        .presentation-home-image{
+            width: 100%;
+        }
+    }
+    
+}

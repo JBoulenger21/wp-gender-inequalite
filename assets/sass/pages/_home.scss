@@ -1,0 +1,93 @@
+@import "../utils/variables";
+
+
+.encadre-introduction-home{
+    position: relative;
+    border: 3px solid $greenLight;
+    margin: {
+        top: 8rem;
+        bottom: 8rem;
+    }
+    display: flex;
+    padding: 2.5rem;
+    .img-intro-home{
+        width: 15rem;
+        padding-right: 2rem;
+    }
+    .p-intro-home{
+        width: 75%;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 0;
+        p{
+            padding: {
+                right: 1.5rem;
+                left: 1rem;
+            }
+        }
+    }
+}
+
+.presentation-home{
+    margin: {
+        top: 8rem;
+        bottom: 8rem;
+    }
+    .p-presentation-home{
+        width: 75%;
+        text-align: center;
+        margin: {
+            bottom: 2rem;
+            left: auto;
+            right: auto;
+        }
+    }
+    .presentation-home-image{
+        text-align: center;
+        width: 30rem;
+    }
+}
+.bg-section-pagehome{
+    background-color: white;
+    padding-top: 1rem;
+}
+.pages-home{
+
+    p{
+        color: black;
+        font-weight: 300;
+        padding: 1.2rem;
+    }
+    margin: {
+        top: 8rem;
+    }
+    .hauteur{
+        height: 171px;
+    }
+    .img-page-home{
+        width: 10rem;
+    }
+    h3{
+        text-align: center;
+    }
+    .p-home{
+        // padding: {
+        //     left: 3rem;
+        //     right: 3rem;
+        // }
+    }
+    button{
+        background-color: $purpleLight;
+        color: $greenLight;
+        width: 10rem;
+        border: {
+            color: $purpleLight;
+            radius: 10px;
+        }
+        &:hover{
+            background-color: $purpleMedium;
+            border-color: $purpleMedium;
+        }
+    }
+}

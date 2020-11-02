@@ -1,0 +1,51 @@
+@import "../utils/variables";
+.background404{
+  height: 100%;
+  width: 100%;
+  background-color: $purpleDark;
+}
+.contain-404{
+  display: flex;
+  justify-content: flex-start;
+  height: 55vh;
+  width: 40%;
+  border: solid 5px $greenLight;
+  border:{
+    top:none;
+    right:none;
+  }
+  margin:{
+    right:0;
+    left: 0;
+    top: 5rem;
+  }
+    h1{
+      color: white;
+      display: flex;
+      justify-content: flex-start;
+      top: 40%;
+      font-size: 5rem;
+      padding:{
+        left: 4rem;
+      }
+    }
+  h2{
+    color: white;
+    width: 75%;
+    position: absolute;
+    top: 60%;
+    font-size: 1.5rem;
+    background-color: transparent!important;
+    padding:{
+      left: 4rem;
+    }
+    margin:{
+      top: 0;
+    }
+    text-align: left;
+  }
+}
+
+.bidouille{
+  opacity: 0;
+}
