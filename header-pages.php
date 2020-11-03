@@ -71,6 +71,11 @@
         height: 25vh;
         width: 100%;
       }
+      @media screen and (max-width: 680px){
+        .header{
+          height: 35vh;
+        }
+      }
     </style>
     <script>
       /* Open when someone clicks on the span element */
