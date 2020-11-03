@@ -2,7 +2,7 @@
 /*
 Template Name: Causes
 */
-get_header();
+get_header('pages');
 ?>
 
 <div class="centerCause">

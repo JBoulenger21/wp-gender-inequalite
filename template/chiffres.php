@@ -3,7 +3,7 @@
 Template Name: chiffres
 */
 
-get_header();
+get_header('pages');
 
 ?>
  

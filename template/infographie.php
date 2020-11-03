@@ -2,7 +2,7 @@
 /*
 Template Name: Infographie
 */
-get_header();
+get_header('pages');
 ?>
 
 <div class="infographie">
