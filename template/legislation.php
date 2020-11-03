@@ -3,7 +3,7 @@
 Template Name: Législation
 */
 
-get_header();
+get_header('pages');
 
 ?>
 <section class="legislation">

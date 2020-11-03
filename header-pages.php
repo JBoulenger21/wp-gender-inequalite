@@ -3,7 +3,6 @@
   <head>
     <meta charset="<?php bloginfo( 'charset' ); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
-    <meta name="description" content="Un site qui récapitule les informations sur les différences salariales en homme et femme.">
     <title><?php wp_title(); ?></title>
     <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css">
     <?php wp_head(); ?>
@@ -61,7 +60,6 @@
           </div>
           
         </nav>
-        <h1><?php echo bloginfo('name'); ?></h1>
 
 
       </div>
@@ -70,22 +68,8 @@
 
     <style>
       .header{
-        background-image: url('<?php header_image() ?>');
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-position: center;
-        height: 100vh;
+        height: 25vh;
         width: 100%;
-      }
-      @media screen and (min-width: 1148px) and (max-width: 1520px){
-        .header{
-          background-size: auto;
-        }
-      }
-      @media screen and (max-width: 681px){
-        .header{
-          background-image: none;
-        }
       }
     </style>
     <script>
